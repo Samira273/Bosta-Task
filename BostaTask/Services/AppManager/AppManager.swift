@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Reachability
+
 class AppManager: NSObject {
     
     static let shared: AppManager = AppManager()
@@ -18,8 +19,6 @@ class AppManager: NSObject {
     static func launchApp(_ application: UIApplication) {
         if #available(iOS 13, *) {
             setUpReachability()
-            // use UICollectionViewCompositionalLayout
-            //Scene Delegate will call  initWindow(windowScene: UIWindowScene)
         } else {
             initWindow()
         }
@@ -45,7 +44,6 @@ class AppManager: NSObject {
     }
     
     static func setUpReachability() {
-        
         reachability.whenUnreachable = { _ in
             self.reachability.whenReachable = { reachability in
                 NotificationCenter.default.post(name: .networkReConnected, object: nil)

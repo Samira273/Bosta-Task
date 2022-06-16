@@ -16,8 +16,6 @@
 		E5339D35285B3FEF000419EC /* BostaTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D34285B3FEF000419EC /* BostaTaskUITestsLaunchTests.swift */; };
 		E5CDFA31285B413900D00B88 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA30285B413900D00B88 /* Assets.swift */; };
 		E5CDFA3A285B480700D00B88 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA39285B480700D00B88 /* AppManager.swift */; };
-		E5CDFA3D285B488E00D00B88 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA3C285B488E00D00B88 /* Reachability */; };
-		E5CDFA40285B48A100D00B88 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA3F285B48A100D00B88 /* Swinject */; };
 		E5CDFA44285B497C00D00B88 /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA43285B497C00D00B88 /* NotificationName+Extension.swift */; };
 		E5CDFA47285B4A0700D00B88 /* VCsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA46285B4A0700D00B88 /* VCsContainer.swift */; };
 		E5CDFA4A285B4A3A00D00B88 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA49285B4A3A00D00B88 /* Assembler.swift */; };
@@ -26,6 +24,15 @@
 		E5CDFA54285B572F00D00B88 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA52285B572F00D00B88 /* SplashVC.swift */; };
 		E5CDFA55285B572F00D00B88 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CDFA53285B572F00D00B88 /* SplashVC.xib */; };
 		E5CDFA57285B57F800D00B88 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA56285B57F800D00B88 /* AppAssembly.swift */; };
+		E5CDFA5E285B63D600D00B88 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA5D285B63D600D00B88 /* BaseVC.swift */; };
+		E5CDFA62285B64B100D00B88 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA61285B64B100D00B88 /* BaseVM.swift */; };
+		E5CDFA75285BC09A00D00B88 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA74285BC09A00D00B88 /* Reachability */; };
+		E5CDFA78285BC0B900D00B88 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA77285BC0B900D00B88 /* Swinject */; };
+		E5CDFA7B285BC14600D00B88 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA7A285BC14600D00B88 /* SwiftMessages */; };
+		E5CDFA84285BC41200D00B88 /* NoInternetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CDFA80285BC41200D00B88 /* NoInternetView.xib */; };
+		E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA82285BC41200D00B88 /* NoInternetView.swift */; };
+		E5CDFA8A285BC58700D00B88 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA88285BC58600D00B88 /* Loader.swift */; };
+		E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,12 @@
 		E5CDFA52285B572F00D00B88 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		E5CDFA53285B572F00D00B88 /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		E5CDFA56285B57F800D00B88 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		E5CDFA5D285B63D600D00B88 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		E5CDFA61285B64B100D00B88 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		E5CDFA81285BC41200D00B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NoInternetView.xib; sourceTree = "<group>"; };
+		E5CDFA82285BC41200D00B88 /* NoInternetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
+		E5CDFA88285BC58600D00B88 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5CDFA3D285B488E00D00B88 /* Reachability in Frameworks */,
-				E5CDFA40285B48A100D00B88 /* Swinject in Frameworks */,
+				E5CDFA75285BC09A00D00B88 /* Reachability in Frameworks */,
+				E5CDFA7B285BC14600D00B88 /* SwiftMessages in Frameworks */,
+				E5CDFA78285BC0B900D00B88 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +133,7 @@
 		E5339D10285B3FEE000419EC /* BostaTask */ = {
 			isa = PBXGroup;
 			children = (
+				E5CDFA5B285B63B400D00B88 /* Base */,
 				E5CDFA42285B496C00D00B88 /* Extensions */,
 				E5CDFA34285B432700D00B88 /* Features */,
 				E5CDFA32285B423000D00B88 /* Services */,
@@ -291,6 +306,43 @@
 			path = AppNavigationContoller;
 			sourceTree = "<group>";
 		};
+		E5CDFA5B285B63B400D00B88 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFA87285BC58600D00B88 /* Loader */,
+				E5CDFA7D285BC41200D00B88 /* No Internet view */,
+				E5CDFA5C285B63C100D00B88 /* BaseView */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E5CDFA5C285B63C100D00B88 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFA5D285B63D600D00B88 /* BaseVC.swift */,
+				E5CDFA61285B64B100D00B88 /* BaseVM.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		E5CDFA7D285BC41200D00B88 /* No Internet view */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFA82285BC41200D00B88 /* NoInternetView.swift */,
+				E5CDFA80285BC41200D00B88 /* NoInternetView.xib */,
+			);
+			path = "No Internet view";
+			sourceTree = "<group>";
+		};
+		E5CDFA87285BC58600D00B88 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFA88285BC58600D00B88 /* Loader.swift */,
+				E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,8 +361,9 @@
 			);
 			name = BostaTask;
 			packageProductDependencies = (
-				E5CDFA3C285B488E00D00B88 /* Reachability */,
-				E5CDFA3F285B48A100D00B88 /* Swinject */,
+				E5CDFA74285BC09A00D00B88 /* Reachability */,
+				E5CDFA77285BC0B900D00B88 /* Swinject */,
+				E5CDFA7A285BC14600D00B88 /* SwiftMessages */,
 			);
 			productName = BostaTask;
 			productReference = E5339D0E285B3FEE000419EC /* BostaTask.app */;
@@ -385,10 +438,9 @@
 			);
 			mainGroup = E5339D05285B3FED000419EC;
 			packageReferences = (
-				E5CDFA3B285B488E00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */,
-				E5CDFA3E285B48A100D00B88 /* XCRemoteSwiftPackageReference "Swinject" */,
-				E5CDFA41285B48BB00D00B88 /* XCRemoteSwiftPackageReference "Moya" */,
-				E5CDFA58285B5B5D00D00B88 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				E5CDFA73285BC09A00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */,
+				E5CDFA76285BC0B900D00B88 /* XCRemoteSwiftPackageReference "Swinject" */,
+				E5CDFA79285BC14600D00B88 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			productRefGroup = E5339D0F285B3FEE000419EC /* Products */;
 			projectDirPath = "";
@@ -409,6 +461,7 @@
 				E5CDFA55285B572F00D00B88 /* SplashVC.xib in Resources */,
 				E5339D1E285B3FEF000419EC /* LaunchScreen.storyboard in Resources */,
 				E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */,
+				E5CDFA84285BC41200D00B88 /* NoInternetView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,11 +513,16 @@
 				E5CDFA47285B4A0700D00B88 /* VCsContainer.swift in Sources */,
 				E5CDFA4A285B4A3A00D00B88 /* Assembler.swift in Sources */,
 				E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */,
+				E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */,
 				E5CDFA57285B57F800D00B88 /* AppAssembly.swift in Sources */,
+				E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */,
+				E5CDFA62285B64B100D00B88 /* BaseVM.swift in Sources */,
+				E5CDFA5E285B63D600D00B88 /* BaseVC.swift in Sources */,
 				E5CDFA4E285B4A5D00D00B88 /* ProfileAssembly.swift in Sources */,
 				E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */,
 				E5CDFA31285B413900D00B88 /* Assets.swift in Sources */,
 				E5CDFA3A285B480700D00B88 /* AppManager.swift in Sources */,
+				E5CDFA8A285BC58700D00B88 /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +565,14 @@
 				E5339D1D285B3FEF000419EC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E5CDFA80285BC41200D00B88 /* NoInternetView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5CDFA81285BC41200D00B88 /* Base */,
+			);
+			name = NoInternetView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -562,7 +628,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -616,7 +682,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -792,7 +858,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E5CDFA3B285B488E00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+		E5CDFA73285BC09A00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
 			requirement = {
@@ -800,42 +866,39 @@
 				kind = branch;
 			};
 		};
-		E5CDFA3E285B48A100D00B88 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+		E5CDFA76285BC0B900D00B88 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
-		E5CDFA41285B48BB00D00B88 /* XCRemoteSwiftPackageReference "Moya" */ = {
+		E5CDFA79285BC14600D00B88 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya";
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-		E5CDFA58285B5B5D00D00B88 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E5CDFA3C285B488E00D00B88 /* Reachability */ = {
+		E5CDFA74285BC09A00D00B88 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E5CDFA3B285B488E00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */;
+			package = E5CDFA73285BC09A00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */;
 			productName = Reachability;
 		};
-		E5CDFA3F285B48A100D00B88 /* Swinject */ = {
+		E5CDFA77285BC0B900D00B88 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E5CDFA3E285B48A100D00B88 /* XCRemoteSwiftPackageReference "Swinject" */;
+			package = E5CDFA76285BC0B900D00B88 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		E5CDFA7A285BC14600D00B88 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5CDFA79285BC14600D00B88 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
