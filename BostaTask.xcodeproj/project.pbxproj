@@ -33,6 +33,15 @@
 		E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA82285BC41200D00B88 /* NoInternetView.swift */; };
 		E5CDFA8A285BC58700D00B88 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA88285BC58600D00B88 /* Loader.swift */; };
 		E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */; };
+		E5CDFA8E285BC89900D00B88 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA8D285BC89900D00B88 /* PromiseKit */; };
+		E5CDFA92285BC9EC00D00B88 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */; };
+		E5CDFA98285BCC6100D00B88 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA97285BCC6100D00B88 /* Moya */; };
+		E5CDFA9B285BCD5F00D00B88 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA9A285BCD5F00D00B88 /* ErrorHandler.swift */; };
+		E5CDFA9D285BCED300D00B88 /* NetworkDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA9C285BCED300D00B88 /* NetworkDefaults.swift */; };
+		E5CDFAA1285BD0EF00D00B88 /* MoyaProvider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFAA0285BD0EF00D00B88 /* MoyaProvider+Extension.swift */; };
+		E5CDFAA4285BD4C000D00B88 /* ProfileAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFAA3285BD4C000D00B88 /* ProfileAPIs.swift */; };
+		E5CDFAA6285BD4CD00D00B88 /* AlbumsAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFAA5285BD4CD00D00B88 /* AlbumsAPIs.swift */; };
+		E5CDFAAA285BD5F400D00B88 /* ProfileAPIs+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFAA9285BD5F400D00B88 /* ProfileAPIs+Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +89,13 @@
 		E5CDFA82285BC41200D00B88 /* NoInternetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
 		E5CDFA88285BC58600D00B88 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderProtocol.swift; sourceTree = "<group>"; };
+		E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E5CDFA9A285BCD5F00D00B88 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		E5CDFA9C285BCED300D00B88 /* NetworkDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDefaults.swift; sourceTree = "<group>"; };
+		E5CDFAA0285BD0EF00D00B88 /* MoyaProvider+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Extension.swift"; sourceTree = "<group>"; };
+		E5CDFAA3285BD4C000D00B88 /* ProfileAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPIs.swift; sourceTree = "<group>"; };
+		E5CDFAA5285BD4CD00D00B88 /* AlbumsAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsAPIs.swift; sourceTree = "<group>"; };
+		E5CDFAA9285BD5F400D00B88 /* ProfileAPIs+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileAPIs+Network.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +104,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5CDFA75285BC09A00D00B88 /* Reachability in Frameworks */,
+				E5CDFA8E285BC89900D00B88 /* PromiseKit in Frameworks */,
 				E5CDFA7B285BC14600D00B88 /* SwiftMessages in Frameworks */,
+				E5CDFA98285BCC6100D00B88 /* Moya in Frameworks */,
 				E5CDFA78285BC0B900D00B88 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,11 +151,12 @@
 		E5339D10285B3FEE000419EC /* BostaTask */ = {
 			isa = PBXGroup;
 			children = (
+				E5CDFA2B285B408E00D00B88 /* App Delegate */,
 				E5CDFA5B285B63B400D00B88 /* Base */,
+				E5CDFA32285B423000D00B88 /* Services */,
 				E5CDFA42285B496C00D00B88 /* Extensions */,
 				E5CDFA34285B432700D00B88 /* Features */,
-				E5CDFA32285B423000D00B88 /* Services */,
-				E5CDFA2B285B408E00D00B88 /* App Delegate */,
+				E5CDFA8F285BC8A500D00B88 /* Network */,
 				E5CDFA2F285B410000D00B88 /* Resources */,
 				E5CDFA2C285B40B600D00B88 /* UI */,
 				E5CDFA2D285B40E200D00B88 /* Supporting Files */,
@@ -343,6 +362,60 @@
 			path = Loader;
 			sourceTree = "<group>";
 		};
+		E5CDFA8F285BC8A500D00B88 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFAA2285BD4A500D00B88 /* APIs */,
+				E5CDFA99285BCD4900D00B88 /* Error */,
+				E5CDFA90285BC9DE00D00B88 /* Core */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E5CDFA90285BC9DE00D00B88 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */,
+				E5CDFA9C285BCED300D00B88 /* NetworkDefaults.swift */,
+				E5CDFAA0285BD0EF00D00B88 /* MoyaProvider+Extension.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E5CDFA99285BCD4900D00B88 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFA9A285BCD5F00D00B88 /* ErrorHandler.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		E5CDFAA2285BD4A500D00B88 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFAA7285BD5BC00D00B88 /* Profile */,
+				E5CDFAA8285BD5C600D00B88 /* Albums */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		E5CDFAA7285BD5BC00D00B88 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFAA3285BD4C000D00B88 /* ProfileAPIs.swift */,
+				E5CDFAA9285BD5F400D00B88 /* ProfileAPIs+Network.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E5CDFAA8285BD5C600D00B88 /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFAA5285BD4CD00D00B88 /* AlbumsAPIs.swift */,
+			);
+			path = Albums;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,6 +437,8 @@
 				E5CDFA74285BC09A00D00B88 /* Reachability */,
 				E5CDFA77285BC0B900D00B88 /* Swinject */,
 				E5CDFA7A285BC14600D00B88 /* SwiftMessages */,
+				E5CDFA8D285BC89900D00B88 /* PromiseKit */,
+				E5CDFA97285BCC6100D00B88 /* Moya */,
 			);
 			productName = BostaTask;
 			productReference = E5339D0E285B3FEE000419EC /* BostaTask.app */;
@@ -441,6 +516,8 @@
 				E5CDFA73285BC09A00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */,
 				E5CDFA76285BC0B900D00B88 /* XCRemoteSwiftPackageReference "Swinject" */,
 				E5CDFA79285BC14600D00B88 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				E5CDFA8C285BC89900D00B88 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				E5CDFA96285BCC6100D00B88 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = E5339D0F285B3FEE000419EC /* Products */;
 			projectDirPath = "";
@@ -508,19 +585,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5CDFA50285B567E00D00B88 /* AppNavigationController.swift in Sources */,
+				E5CDFAA4285BD4C000D00B88 /* ProfileAPIs.swift in Sources */,
 				E5CDFA54285B572F00D00B88 /* SplashVC.swift in Sources */,
 				E5CDFA44285B497C00D00B88 /* NotificationName+Extension.swift in Sources */,
 				E5CDFA47285B4A0700D00B88 /* VCsContainer.swift in Sources */,
 				E5CDFA4A285B4A3A00D00B88 /* Assembler.swift in Sources */,
 				E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */,
 				E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */,
+				E5CDFAAA285BD5F400D00B88 /* ProfileAPIs+Network.swift in Sources */,
 				E5CDFA57285B57F800D00B88 /* AppAssembly.swift in Sources */,
 				E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */,
 				E5CDFA62285B64B100D00B88 /* BaseVM.swift in Sources */,
+				E5CDFA92285BC9EC00D00B88 /* NetworkManager.swift in Sources */,
+				E5CDFAA6285BD4CD00D00B88 /* AlbumsAPIs.swift in Sources */,
 				E5CDFA5E285B63D600D00B88 /* BaseVC.swift in Sources */,
 				E5CDFA4E285B4A5D00D00B88 /* ProfileAssembly.swift in Sources */,
 				E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */,
 				E5CDFA31285B413900D00B88 /* Assets.swift in Sources */,
+				E5CDFA9D285BCED300D00B88 /* NetworkDefaults.swift in Sources */,
+				E5CDFAA1285BD0EF00D00B88 /* MoyaProvider+Extension.swift in Sources */,
+				E5CDFA9B285BCD5F00D00B88 /* ErrorHandler.swift in Sources */,
 				E5CDFA3A285B480700D00B88 /* AppManager.swift in Sources */,
 				E5CDFA8A285BC58700D00B88 /* Loader.swift in Sources */,
 			);
@@ -882,6 +966,22 @@
 				kind = branch;
 			};
 		};
+		E5CDFA8C285BC89900D00B88 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		E5CDFA96285BCC6100D00B88 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -899,6 +999,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E5CDFA79285BC14600D00B88 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
 			productName = SwiftMessages;
+		};
+		E5CDFA8D285BC89900D00B88 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5CDFA8C285BC89900D00B88 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		E5CDFA97285BCC6100D00B88 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5CDFA96285BCC6100D00B88 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
