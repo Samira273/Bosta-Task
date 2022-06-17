@@ -13,6 +13,19 @@ class BaseVC: UIViewController {
     var baseVM: BaseVM?
     var noInternetView = NoInternetView()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(networkReConnected),
+            name: .networkReConnected,
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(reachabilityChanged),
+            name: .reachabilityChanged, object: nil)
+    }
+    
     init(_ viewModel: BaseVM) {
         self.baseVM = viewModel
         super.init(nibName: nil, bundle: nil)
