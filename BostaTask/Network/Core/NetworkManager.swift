@@ -33,5 +33,4 @@ class NetworkManager {
         provider = MoyaProvider<MultiTarget>(
             plugins: [NetworkLoggerPlugin(configuration: loggerConfig)])
     }
-    
 }

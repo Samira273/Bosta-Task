@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5258D85285C7EBE00B12CFF /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D84285C7EBE00B12CFF /* ProfileModel.swift */; };
+		E5258D89285C93B500B12CFF /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D88285C93B500B12CFF /* ProfileVM.swift */; };
+		E5258D8C285C93C900B12CFF /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D8A285C93C900B12CFF /* ProfileVC.swift */; };
+		E5258D8D285C93C900B12CFF /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258D8B285C93C900B12CFF /* ProfileVC.xib */; };
+		E5258D93285C9F2200B12CFF /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D91285C9F2200B12CFF /* ProfileTableViewCell.swift */; };
+		E5258D94285C9F2200B12CFF /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258D92285C9F2200B12CFF /* ProfileTableViewCell.xib */; };
+		E5258D9B285CA29400B12CFF /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D9A285CA29400B12CFF /* AlbumModel.swift */; };
+		E5258D9F285CB34800B12CFF /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D9E285CB34700B12CFF /* ProfileHeaderView.swift */; };
+		E5258DA1285CB35200B12CFF /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258DA0285CB35200B12CFF /* ProfileHeaderView.xib */; };
+		E5258DA3285D067B00B12CFF /* UIView+Extensoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DA2285D067B00B12CFF /* UIView+Extensoin.swift */; };
+		E5258DA7285D0B6700B12CFF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DA6285D0B6700B12CFF /* UIView+Extension.swift */; };
 		E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D11285B3FEE000419EC /* AppDelegate.swift */; };
 		E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D13285B3FEE000419EC /* SceneDelegate.swift */; };
 		E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5339D1A285B3FEF000419EC /* Assets.xcassets */; };
@@ -33,12 +44,11 @@
 		E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA82285BC41200D00B88 /* NoInternetView.swift */; };
 		E5CDFA8A285BC58700D00B88 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA88285BC58600D00B88 /* Loader.swift */; };
 		E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */; };
-		E5CDFA8E285BC89900D00B88 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA8D285BC89900D00B88 /* PromiseKit */; };
 		E5CDFA92285BC9EC00D00B88 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */; };
 		E5CDFA98285BCC6100D00B88 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA97285BCC6100D00B88 /* Moya */; };
 		E5CDFA9B285BCD5F00D00B88 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA9A285BCD5F00D00B88 /* ErrorHandler.swift */; };
 		E5CDFA9D285BCED300D00B88 /* NetworkDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA9C285BCED300D00B88 /* NetworkDefaults.swift */; };
-		E5CDFAA1285BD0EF00D00B88 /* MoyaProvider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFAA0285BD0EF00D00B88 /* MoyaProvider+Extension.swift */; };
+		E5CDFAA1285BD0EF00D00B88 /* NetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFAA0285BD0EF00D00B88 /* NetworkManager+Extension.swift */; };
 		E5CDFAA4285BD4C000D00B88 /* ProfileAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFAA3285BD4C000D00B88 /* ProfileAPIs.swift */; };
 		E5CDFAA6285BD4CD00D00B88 /* AlbumsAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFAA5285BD4CD00D00B88 /* AlbumsAPIs.swift */; };
 		E5CDFAAA285BD5F400D00B88 /* ProfileAPIs+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFAA9285BD5F400D00B88 /* ProfileAPIs+Network.swift */; };
@@ -62,6 +72,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5258D84285C7EBE00B12CFF /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		E5258D88285C93B500B12CFF /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
+		E5258D8A285C93C900B12CFF /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		E5258D8B285C93C900B12CFF /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		E5258D91285C9F2200B12CFF /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		E5258D92285C9F2200B12CFF /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		E5258D9A285CA29400B12CFF /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		E5258D9E285CB34700B12CFF /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		E5258DA0285CB35200B12CFF /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		E5258DA2285D067B00B12CFF /* UIView+Extensoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensoin.swift"; sourceTree = "<group>"; };
+		E5258DA6285D0B6700B12CFF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E5339D0E285B3FEE000419EC /* BostaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BostaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5339D11285B3FEE000419EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5339D13285B3FEE000419EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +113,7 @@
 		E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E5CDFA9A285BCD5F00D00B88 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		E5CDFA9C285BCED300D00B88 /* NetworkDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDefaults.swift; sourceTree = "<group>"; };
-		E5CDFAA0285BD0EF00D00B88 /* MoyaProvider+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Extension.swift"; sourceTree = "<group>"; };
+		E5CDFAA0285BD0EF00D00B88 /* NetworkManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Extension.swift"; sourceTree = "<group>"; };
 		E5CDFAA3285BD4C000D00B88 /* ProfileAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPIs.swift; sourceTree = "<group>"; };
 		E5CDFAA5285BD4CD00D00B88 /* AlbumsAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsAPIs.swift; sourceTree = "<group>"; };
 		E5CDFAA9285BD5F400D00B88 /* ProfileAPIs+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileAPIs+Network.swift"; sourceTree = "<group>"; };
@@ -104,7 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5CDFA75285BC09A00D00B88 /* Reachability in Frameworks */,
-				E5CDFA8E285BC89900D00B88 /* PromiseKit in Frameworks */,
 				E5CDFA7B285BC14600D00B88 /* SwiftMessages in Frameworks */,
 				E5CDFA98285BCC6100D00B88 /* Moya in Frameworks */,
 				E5CDFA78285BC0B900D00B88 /* Swinject in Frameworks */,
@@ -128,6 +148,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5258D8E285C93DD00B12CFF /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E5258D90285C9F0C00B12CFF /* ProfileTableViewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		E5258D90285C9F0C00B12CFF /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E5258D91285C9F2200B12CFF /* ProfileTableViewCell.swift */,
+				E5258D92285C9F2200B12CFF /* ProfileTableViewCell.xib */,
+			);
+			path = ProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		E5258D9C285CB31300B12CFF /* TableViewHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				E5258D9D285CB31B00B12CFF /* ProfileHeaderView */,
+			);
+			path = TableViewHeaders;
+			sourceTree = "<group>";
+		};
+		E5258D9D285CB31B00B12CFF /* ProfileHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				E5258D9E285CB34700B12CFF /* ProfileHeaderView.swift */,
+				E5258DA0285CB35200B12CFF /* ProfileHeaderView.xib */,
+			);
+			path = ProfileHeaderView;
+			sourceTree = "<group>";
+		};
 		E5339D05285B3FED000419EC = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +209,8 @@
 				E5CDFA5B285B63B400D00B88 /* Base */,
 				E5CDFA32285B423000D00B88 /* Services */,
 				E5CDFA42285B496C00D00B88 /* Extensions */,
+				E5258D8E285C93DD00B12CFF /* TableViewCells */,
+				E5258D9C285CB31300B12CFF /* TableViewHeaders */,
 				E5CDFA34285B432700D00B88 /* Features */,
 				E5CDFA8F285BC8A500D00B88 /* Network */,
 				E5CDFA2F285B410000D00B88 /* Resources */,
@@ -256,6 +312,8 @@
 		E5CDFA36285B434700D00B88 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E5258D8A285C93C900B12CFF /* ProfileVC.swift */,
+				E5258D8B285C93C900B12CFF /* ProfileVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +321,7 @@
 		E5CDFA37285B434B00D00B88 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				E5258D88285C93B500B12CFF /* ProfileVM.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -270,6 +329,8 @@
 		E5CDFA38285B435500D00B88 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E5258D84285C7EBE00B12CFF /* ProfileModel.swift */,
+				E5258D9A285CA29400B12CFF /* AlbumModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +339,8 @@
 			isa = PBXGroup;
 			children = (
 				E5CDFA43285B497C00D00B88 /* NotificationName+Extension.swift */,
+				E5258DA2285D067B00B12CFF /* UIView+Extensoin.swift */,
+				E5258DA6285D0B6700B12CFF /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -377,7 +440,7 @@
 			children = (
 				E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */,
 				E5CDFA9C285BCED300D00B88 /* NetworkDefaults.swift */,
-				E5CDFAA0285BD0EF00D00B88 /* MoyaProvider+Extension.swift */,
+				E5CDFAA0285BD0EF00D00B88 /* NetworkManager+Extension.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -437,7 +500,6 @@
 				E5CDFA74285BC09A00D00B88 /* Reachability */,
 				E5CDFA77285BC0B900D00B88 /* Swinject */,
 				E5CDFA7A285BC14600D00B88 /* SwiftMessages */,
-				E5CDFA8D285BC89900D00B88 /* PromiseKit */,
 				E5CDFA97285BCC6100D00B88 /* Moya */,
 			);
 			productName = BostaTask;
@@ -516,7 +578,6 @@
 				E5CDFA73285BC09A00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */,
 				E5CDFA76285BC0B900D00B88 /* XCRemoteSwiftPackageReference "Swinject" */,
 				E5CDFA79285BC14600D00B88 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
-				E5CDFA8C285BC89900D00B88 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				E5CDFA96285BCC6100D00B88 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = E5339D0F285B3FEE000419EC /* Products */;
@@ -539,6 +600,9 @@
 				E5339D1E285B3FEF000419EC /* LaunchScreen.storyboard in Resources */,
 				E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */,
 				E5CDFA84285BC41200D00B88 /* NoInternetView.xib in Resources */,
+				E5258D8D285C93C900B12CFF /* ProfileVC.xib in Resources */,
+				E5258DA1285CB35200B12CFF /* ProfileHeaderView.xib in Resources */,
+				E5258D94285C9F2200B12CFF /* ProfileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,15 +649,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5CDFA50285B567E00D00B88 /* AppNavigationController.swift in Sources */,
+				E5258D9B285CA29400B12CFF /* AlbumModel.swift in Sources */,
 				E5CDFAA4285BD4C000D00B88 /* ProfileAPIs.swift in Sources */,
 				E5CDFA54285B572F00D00B88 /* SplashVC.swift in Sources */,
+				E5258D93285C9F2200B12CFF /* ProfileTableViewCell.swift in Sources */,
 				E5CDFA44285B497C00D00B88 /* NotificationName+Extension.swift in Sources */,
 				E5CDFA47285B4A0700D00B88 /* VCsContainer.swift in Sources */,
 				E5CDFA4A285B4A3A00D00B88 /* Assembler.swift in Sources */,
+				E5258DA3285D067B00B12CFF /* UIView+Extensoin.swift in Sources */,
 				E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */,
 				E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */,
+				E5258D8C285C93C900B12CFF /* ProfileVC.swift in Sources */,
 				E5CDFAAA285BD5F400D00B88 /* ProfileAPIs+Network.swift in Sources */,
 				E5CDFA57285B57F800D00B88 /* AppAssembly.swift in Sources */,
+				E5258D89285C93B500B12CFF /* ProfileVM.swift in Sources */,
+				E5258D85285C7EBE00B12CFF /* ProfileModel.swift in Sources */,
+				E5258D9F285CB34800B12CFF /* ProfileHeaderView.swift in Sources */,
 				E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */,
 				E5CDFA62285B64B100D00B88 /* BaseVM.swift in Sources */,
 				E5CDFA92285BC9EC00D00B88 /* NetworkManager.swift in Sources */,
@@ -603,7 +674,8 @@
 				E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */,
 				E5CDFA31285B413900D00B88 /* Assets.swift in Sources */,
 				E5CDFA9D285BCED300D00B88 /* NetworkDefaults.swift in Sources */,
-				E5CDFAA1285BD0EF00D00B88 /* MoyaProvider+Extension.swift in Sources */,
+				E5258DA7285D0B6700B12CFF /* UIView+Extension.swift in Sources */,
+				E5CDFAA1285BD0EF00D00B88 /* NetworkManager+Extension.swift in Sources */,
 				E5CDFA9B285BCD5F00D00B88 /* ErrorHandler.swift in Sources */,
 				E5CDFA3A285B480700D00B88 /* AppManager.swift in Sources */,
 				E5CDFA8A285BC58700D00B88 /* Loader.swift in Sources */,
@@ -783,6 +855,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9A2T32256;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BostaTask/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -809,6 +882,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9A2T32256;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BostaTask/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -966,14 +1040,6 @@
 				kind = branch;
 			};
 		};
-		E5CDFA8C285BC89900D00B88 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mxcl/PromiseKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
 		E5CDFA96285BCC6100D00B88 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -999,11 +1065,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E5CDFA79285BC14600D00B88 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
 			productName = SwiftMessages;
-		};
-		E5CDFA8D285BC89900D00B88 /* PromiseKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E5CDFA8C285BC89900D00B88 /* XCRemoteSwiftPackageReference "PromiseKit" */;
-			productName = PromiseKit;
 		};
 		E5CDFA97285BCC6100D00B88 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;

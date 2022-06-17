@@ -9,9 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashVC" customModule="BostaTask" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="BostaTask" customModuleProvider="target">
             <connections>
-                <outlet property="logoImage" destination="Alr-7U-R0M" id="pc1-eJ-s3k"/>
+                <outlet property="albumsTableView" destination="vpT-oJ-BHT" id="Gck-V0-59r"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,21 +20,23 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Alr-7U-R0M">
-                    <rect key="frame" x="64" y="305" width="286" height="286"/>
-                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vpT-oJ-BHT">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Alr-7U-R0M" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LhT-Ls-rIY"/>
-                <constraint firstItem="Alr-7U-R0M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NGC-fw-dvA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vpT-oJ-BHT" secondAttribute="trailing" id="1A5-fY-EHs"/>
+                <constraint firstItem="vpT-oJ-BHT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GvM-kI-Bmr"/>
+                <constraint firstItem="vpT-oJ-BHT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qOR-AF-3w6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vpT-oJ-BHT" secondAttribute="bottom" id="qOh-XF-OlG"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="110"/>
+            <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
         </view>
     </objects>
     <resources>
-        <image name="ic_logo" width="286" height="286"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
