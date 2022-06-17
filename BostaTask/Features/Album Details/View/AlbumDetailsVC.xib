@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlbumDetailsVC" customModule="BostaTask" customModuleProvider="target">
             <connections>
+                <outlet property="detailsCollectionView" destination="saf-8u-XfF" id="VXJ-Vy-BmG"/>
+                <outlet property="searchBar" destination="RDO-qR-xG1" id="jrd-mZ-0wY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

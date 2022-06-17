@@ -49,9 +49,9 @@ class ProfileVC: BaseVC {
     }
 
     
-    func makeAlbumsDataSource() -> UITableViewDiffableDataSource<ProfileSections, AlbumModel> {
+    func makeAlbumsDataSource() -> UITableViewDiffableDataSource<Sections, AlbumModel> {
         
-      let dataSource = UITableViewDiffableDataSource<ProfileSections, AlbumModel>(
+      let dataSource = UITableViewDiffableDataSource<Sections, AlbumModel>(
         tableView: albumsTableView,
         cellProvider: { (tableView, indexPath, album) ->
           UITableViewCell? in
@@ -67,8 +67,8 @@ class ProfileVC: BaseVC {
     
     override func updateViewWithData() {
         albumsTableView.reloadData()
-        var snapshot = NSDiffableDataSourceSnapshot<ProfileSections, AlbumModel>()
-        snapshot.appendSections(ProfileSections.allCases)
+        var snapshot = NSDiffableDataSourceSnapshot<Sections, AlbumModel>()
+        snapshot.appendSections(Sections.allCases)
         snapshot.appendItems(viewModel.getUserAlbums() ?? [], toSection: .main)
         albumsDataSource.apply(snapshot, animatingDifferences: true)
     }
@@ -87,6 +87,6 @@ extension ProfileVC: UITableViewDelegate {
     }
 }
 
-enum ProfileSections: CaseIterable {
+enum Sections: CaseIterable {
     case main
 }
