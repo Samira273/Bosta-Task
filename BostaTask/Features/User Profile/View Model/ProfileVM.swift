@@ -8,8 +8,9 @@ typealias networkSuccessCallBack<T: Codable> = ((T?) -> Void)
 
 import Foundation
 protocol ProfileVM: BaseVM {
-    func getUserProfile(completion: @escaping networkSuccessCallBack<ProfileModel>)
+    func getUserProfileData()
     func getUserAlbums() -> [AlbumModel]?
+    func getUserProfile() -> ProfileModel?
     var updateProfileTableView: (() -> Void)? {set get}
 }
 
@@ -28,27 +29,25 @@ class ProfileVMImpl: ProfileVM {
     
     var updateProfileTableView: (() -> Void)?
     
-    func getUserProfile(completion: @escaping networkSuccessCallBack<ProfileModel>) {
+    func getUserProfileData() {
         showLoader?()
         NetworkManager.shared.getProfileData(id: Int.random(in: 1..<11)) {[weak self] result, statusCode in
             switch result {
             case .success(let response):
                 self?.profile = response
+                self?.modifyProfileWithFullAddress()
                 self?.loadUserAlbums()
-                completion(self?.getProfileWithFullAddress())
             case .failure(let error):
                 if error.isNetwork {
                     self?.showNoInternetView?()
-                    completion(nil)
                     return
                 }
-                completion(nil)
                 self?.showErrorAlertClosure?(error.message)
             }
         }
     }
     
-    func getProfileWithFullAddress() -> ProfileModel? {
+    func modifyProfileWithFullAddress() {
         var address = ""
         if let street = profile?.address?.street {
             address.append(contentsOf: street)
@@ -66,7 +65,6 @@ class ProfileVMImpl: ProfileVM {
             address.append(contentsOf: zipCode)
         }
         self.profile?.address?.fullAddress = address
-        return self.profile
     }
     
     private func loadUserAlbums() {
@@ -88,6 +86,10 @@ class ProfileVMImpl: ProfileVM {
     
     func getUserAlbums() -> [AlbumModel]? {
         return albums
+    }
+    
+    func getUserProfile() -> ProfileModel? {
+        return profile
     }
     
 }

@@ -9,8 +9,7 @@ import UIKit
 
 class ProfileVC: BaseVC {
 
-    @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var userNameLabel: UILabel!
+   
     @IBOutlet weak var albumsTableView: UITableView!
     
     var viewModel: ProfileVM!
@@ -27,8 +26,7 @@ class ProfileVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        loadData()
-        
+        viewModel.getUserProfileData()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,21 +37,12 @@ class ProfileVC: BaseVC {
     
     func prepareView() {
         ProfileTableViewCell.register(with: albumsTableView)
+        ProfileHeaderView.register(with: albumsTableView)
+        albumsTableView.estimatedRowHeight = UITableView.automaticDimension
         albumsTableView.delegate = self
         albumsTableView.dataSource = albumsDataSource
     }
-    
-    func loadData() {
-        viewModel.getUserProfile {[weak self] profile in
-            guard let profile = profile else { return }
-            self?.bindDataToView(profile)
-        }
-    }
-    
-    func bindDataToView(_ profile: ProfileModel) {
-        userNameLabel.text = profile.name
-        addressLabel.text = profile.address?.fullAddress
-    }
+
     
     func makeAlbumsDataSource() -> UITableViewDiffableDataSource<ProfileSections, AlbumModel> {
         
@@ -80,7 +69,9 @@ class ProfileVC: BaseVC {
 }
 
 extension ProfileVC: UITableViewDelegate {
-   
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return ProfileHeaderView.dequeue(from: tableView, with: viewModel.getUserProfile())
+    }
 }
 
 enum ProfileSections: CaseIterable {

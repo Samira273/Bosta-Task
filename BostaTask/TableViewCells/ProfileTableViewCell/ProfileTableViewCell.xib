@@ -20,7 +20,31 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5R-Zu-J0l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYF-eX-9G9">
+                                <rect key="frame" x="20" y="10" width="290" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7C-Kg-hj0">
+                                <rect key="frame" x="15" y="43" width="290" height="1"/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.92941176470588238" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="1N0-cJ-j5W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qYF-eX-9G9" firstAttribute="top" secondItem="x5R-Zu-J0l" secondAttribute="top" constant="10" id="1aj-cL-3XV"/>
+                            <constraint firstAttribute="trailing" secondItem="P7C-Kg-hj0" secondAttribute="trailing" constant="15" id="Bhg-Ga-K1F"/>
+                            <constraint firstItem="qYF-eX-9G9" firstAttribute="leading" secondItem="x5R-Zu-J0l" secondAttribute="leading" constant="20" id="G7f-wf-UhC"/>
+                            <constraint firstAttribute="bottom" secondItem="P7C-Kg-hj0" secondAttribute="bottom" id="NgA-KG-8ry"/>
+                            <constraint firstItem="P7C-Kg-hj0" firstAttribute="top" secondItem="qYF-eX-9G9" secondAttribute="bottom" constant="10" id="aLI-Vr-iaq"/>
+                            <constraint firstItem="P7C-Kg-hj0" firstAttribute="leading" secondItem="x5R-Zu-J0l" secondAttribute="leading" constant="15" id="cKD-a3-1Sl"/>
+                            <constraint firstAttribute="trailing" secondItem="qYF-eX-9G9" secondAttribute="trailing" constant="10" id="zps-Db-JGo"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
@@ -31,6 +55,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="speratorView" destination="P7C-Kg-hj0" id="UeH-Pd-98S"/>
+                <outlet property="titleLabel" destination="qYF-eX-9G9" id="ivw-l6-0YG"/>
+            </connections>
             <point key="canvasLocation" x="139" y="70"/>
         </tableViewCell>
     </objects>

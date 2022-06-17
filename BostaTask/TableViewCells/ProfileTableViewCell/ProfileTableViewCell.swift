@@ -9,6 +9,9 @@ import UIKit
 
 class ProfileTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var speratorView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +21,11 @@ class ProfileTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configure(with album: AlbumModel?, lastCell: Bool?) {
+        titleLabel.text = album?.title
+        speratorView.isHiddenIfNeeded = lastCell ?? false
     }
     
 }
@@ -47,7 +55,7 @@ extension ProfileTableViewCell {
     public static func dequeue(from tableView: UITableView, for indexPath: IndexPath, with album: AlbumModel?, lastCell: Bool? = false) -> ProfileTableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.cellId, for: indexPath) as! ProfileTableViewCell
-        //cell.configure(with: product, lastCell: lastCell)
+        cell.configure(with: album, lastCell: lastCell)
         return cell
     }
 
