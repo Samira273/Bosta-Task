@@ -70,6 +70,7 @@ class BaseVC: UIViewController {
             Loader.shared.hide()
         }
         self.baseVM?.showNoInternetView = {
+            Loader.shared.hide()
             self.showNoInternetView()
         }
 
@@ -77,6 +78,7 @@ class BaseVC: UIViewController {
 
     func reload() {
       //  fatalError("func must be implmented")
+        Loader.shared.show()
         removeNoInternetView()
     }
 

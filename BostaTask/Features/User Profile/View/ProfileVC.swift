@@ -27,6 +27,12 @@ class ProfileVC: BaseVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.getUserProfileData()
+        self.navigationController?.navigationBar.isHiddenIfNeeded = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHiddenIfNeeded = false
     }
     override func viewDidLoad() {
         super.viewDidLoad()
