@@ -11,7 +11,11 @@ import Swinject
 class ProfileAssembly: Assembly {
     
     func assemble(container: Container) {
-        
+        container.register(ProfileVM.self) { r in ProfileVMImpl() }
+        container.register(ProfileVC.self) { r in
+            let vc = ProfileVC(viewModel: r.resolve(ProfileVM.self)!)
+            return vc
+        }
     }
     
 }

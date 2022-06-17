@@ -11,9 +11,11 @@ class SplashVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-        print("splash heeeh")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            AppManager.shared.setWindowRoot(VCsContainer.getProfileScene())
+        }
     }
 
 }

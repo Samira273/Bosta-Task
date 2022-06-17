@@ -20,6 +20,16 @@ class VCsContainer {
         return vc
     }
     
+    class func getProfileScene() -> UIViewController {
+        guard let vc = Assembler.sharedAssembler.resolver.resolve(ProfileVC.self) else {
+            fatalError("no profile")
+        }
+        return embedVCInNavController(vc)
+    }
     
+    class func embedVCInNavController(_ viewController: UIViewController) -> UIViewController {
+        navController.setRoot(window: viewController)
+          return navController
+    }
 
 }

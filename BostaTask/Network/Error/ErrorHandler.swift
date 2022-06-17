@@ -12,6 +12,7 @@ enum ErrorHandler: Error {
     case network
     case parseError
     case sessionExpired
+    case system(error: String?)
 }
 
 extension ErrorHandler {
@@ -23,6 +24,8 @@ extension ErrorHandler {
             return "Something went wrong"
         case .sessionExpired:
             return "Session Expired"
+        case .system(let error):
+            return error ?? "Something went wrong"
         }
     }
     
@@ -50,6 +53,13 @@ extension ErrorHandler {
             return false
         }
     }
+    var isSystemError: Bool {
+        if case .system = self {
+            return true
+        } else {
+            return false
+        }
+    }
 }
 
 extension Error {
@@ -67,5 +77,9 @@ extension Error {
     
     var isSessionExpired: Bool {
         return (self as? ErrorHandler)?.isSessionExpired ?? false
+    }
+    
+    var isSystemError: Bool {
+        return (self as? ErrorHandler)?.isSystemError ?? false
     }
 }
