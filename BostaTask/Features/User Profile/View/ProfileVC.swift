@@ -9,9 +9,12 @@ import UIKit
 
 class ProfileVC: BaseVC {
 
-    let viewModel: ProfileVM!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var albumsTableView: UITableView!
     
-    @IBOutlet weak var profileTableView: UITableView!
+    var viewModel: ProfileVM!
+    private lazy var albumsDataSource = makeAlbumsDataSource()
     
     init(viewModel: ProfileVM) {
         self.viewModel = viewModel
@@ -30,10 +33,14 @@ class ProfileVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareView()
+        viewModel.updateProfileTableView = updateAlbumsDataSource
     }
+   
     
     func prepareView() {
-        
+        ProfileTableViewCell.register(with: albumsTableView)
+        albumsTableView.delegate = self
+        albumsTableView.dataSource = albumsDataSource
     }
     
     func loadData() {
@@ -42,8 +49,40 @@ class ProfileVC: BaseVC {
             self?.bindDataToView(profile)
         }
     }
-
-    func bindDataToView(_ data: ProfileModel) {
-        
+    
+    func bindDataToView(_ profile: ProfileModel) {
+        userNameLabel.text = profile.name
+        addressLabel.text = profile.address?.fullAddress
     }
+    
+    func makeAlbumsDataSource() -> UITableViewDiffableDataSource<ProfileSections, AlbumModel> {
+        
+      let dataSource = UITableViewDiffableDataSource<ProfileSections, AlbumModel>(
+        tableView: albumsTableView,
+        cellProvider: { (tableView, indexPath, album) ->
+          UITableViewCell? in
+            if indexPath.row == tableView.numberOfRows(inSection: 0) - 1 {
+                return ProfileTableViewCell.dequeue(from: self.albumsTableView, for: indexPath, with: album, lastCell: true)
+            } else {
+                return ProfileTableViewCell.dequeue(from: self.albumsTableView, for: indexPath, with: album)
+            }
+            
+      })
+      return dataSource
+    }
+    
+    func updateAlbumsDataSource() {
+        var snapshot = NSDiffableDataSourceSnapshot<ProfileSections, AlbumModel>()
+        snapshot.appendSections(ProfileSections.allCases)
+        snapshot.appendItems(viewModel.getUserAlbums() ?? [], toSection: .main)
+        albumsDataSource.apply(snapshot, animatingDifferences: true)
+    }
+}
+
+extension ProfileVC: UITableViewDelegate {
+   
+}
+
+enum ProfileSections: CaseIterable {
+    case main
 }

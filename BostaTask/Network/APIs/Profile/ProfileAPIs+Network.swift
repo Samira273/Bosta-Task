@@ -17,5 +17,13 @@ extension NetworkManager {
             self.parseResponse(moyaResult: result, completion: completion)
         }
     }
+    
+    func getProfileAlbums(userId: Int?, completion: @escaping (
+        _ result: Swift.Result<[AlbumModel], ErrorHandler>,
+        _ statusCode: StatusCode?) -> Void) {
+        self.provider.request(MultiTarget(ProfileAPIs.getProfileAlbums(userId: userId))) { (result) in
+            self.parseResponse(moyaResult: result, completion: completion)
+        }
+    }
 
 }

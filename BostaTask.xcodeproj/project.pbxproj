@@ -11,6 +11,9 @@
 		E5258D89285C93B500B12CFF /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D88285C93B500B12CFF /* ProfileVM.swift */; };
 		E5258D8C285C93C900B12CFF /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D8A285C93C900B12CFF /* ProfileVC.swift */; };
 		E5258D8D285C93C900B12CFF /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258D8B285C93C900B12CFF /* ProfileVC.xib */; };
+		E5258D93285C9F2200B12CFF /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D91285C9F2200B12CFF /* ProfileTableViewCell.swift */; };
+		E5258D94285C9F2200B12CFF /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258D92285C9F2200B12CFF /* ProfileTableViewCell.xib */; };
+		E5258D9B285CA29400B12CFF /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D9A285CA29400B12CFF /* AlbumModel.swift */; };
 		E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D11285B3FEE000419EC /* AppDelegate.swift */; };
 		E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D13285B3FEE000419EC /* SceneDelegate.swift */; };
 		E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5339D1A285B3FEF000419EC /* Assets.xcassets */; };
@@ -69,6 +72,9 @@
 		E5258D88285C93B500B12CFF /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
 		E5258D8A285C93C900B12CFF /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E5258D8B285C93C900B12CFF /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		E5258D91285C9F2200B12CFF /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		E5258D92285C9F2200B12CFF /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		E5258D9A285CA29400B12CFF /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		E5339D0E285B3FEE000419EC /* BostaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BostaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5339D11285B3FEE000419EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5339D13285B3FEE000419EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,15 +143,18 @@
 		E5258D8E285C93DD00B12CFF /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				E5258D90285C9F0C00B12CFF /* ProfileTableViewCell */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
-		E5258D8F285C9D6800B12CFF /* TableViewHeaders */ = {
+		E5258D90285C9F0C00B12CFF /* ProfileTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				E5258D91285C9F2200B12CFF /* ProfileTableViewCell.swift */,
+				E5258D92285C9F2200B12CFF /* ProfileTableViewCell.xib */,
 			);
-			path = TableViewHeaders;
+			path = ProfileTableViewCell;
 			sourceTree = "<group>";
 		};
 		E5339D05285B3FED000419EC = {
@@ -176,7 +185,6 @@
 				E5CDFA32285B423000D00B88 /* Services */,
 				E5CDFA42285B496C00D00B88 /* Extensions */,
 				E5258D8E285C93DD00B12CFF /* TableViewCells */,
-				E5258D8F285C9D6800B12CFF /* TableViewHeaders */,
 				E5CDFA34285B432700D00B88 /* Features */,
 				E5CDFA8F285BC8A500D00B88 /* Network */,
 				E5CDFA2F285B410000D00B88 /* Resources */,
@@ -296,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				E5258D84285C7EBE00B12CFF /* ProfileModel.swift */,
+				E5258D9A285CA29400B12CFF /* AlbumModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -564,6 +573,7 @@
 				E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */,
 				E5CDFA84285BC41200D00B88 /* NoInternetView.xib in Resources */,
 				E5258D8D285C93C900B12CFF /* ProfileVC.xib in Resources */,
+				E5258D94285C9F2200B12CFF /* ProfileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,8 +620,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5CDFA50285B567E00D00B88 /* AppNavigationController.swift in Sources */,
+				E5258D9B285CA29400B12CFF /* AlbumModel.swift in Sources */,
 				E5CDFAA4285BD4C000D00B88 /* ProfileAPIs.swift in Sources */,
 				E5CDFA54285B572F00D00B88 /* SplashVC.swift in Sources */,
+				E5258D93285C9F2200B12CFF /* ProfileTableViewCell.swift in Sources */,
 				E5CDFA44285B497C00D00B88 /* NotificationName+Extension.swift in Sources */,
 				E5CDFA47285B4A0700D00B88 /* VCsContainer.swift in Sources */,
 				E5CDFA4A285B4A3A00D00B88 /* Assembler.swift in Sources */,

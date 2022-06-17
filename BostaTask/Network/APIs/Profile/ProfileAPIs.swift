@@ -10,6 +10,7 @@ import Moya
 
 enum  ProfileAPIs {
     case getProfileData(id: Int)
+    case getProfileAlbums(userId: Int?)
     
 }
 
@@ -28,6 +29,8 @@ extension ProfileAPIs: TargetType {
         switch self {
         case .getProfileData(let id):
         return "/users/\(id)"
+        case .getProfileAlbums:
+            return "/albums"
         }
     }
     
@@ -44,6 +47,8 @@ extension ProfileAPIs: TargetType {
     
     var task: Task {
         switch self {
+        case .getProfileAlbums(let userId):
+                return .requestParameters(parameters: ["userId": userId ?? 0], encoding: URLEncoding.queryString)
         default:  return .requestPlain
         }
     }
