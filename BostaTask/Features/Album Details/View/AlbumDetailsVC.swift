@@ -64,7 +64,7 @@ class AlbumDetailsVC: BaseVC {
     }
     
     private func createLayout() -> UICollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.33),
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3333),
                                               heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
 

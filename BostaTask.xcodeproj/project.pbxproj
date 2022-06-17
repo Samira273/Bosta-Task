@@ -24,6 +24,7 @@
 		E5258DB9285D2AED00B12CFF /* AlbumAPIs+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DB8285D2AED00B12CFF /* AlbumAPIs+Network.swift */; };
 		E5258DBF285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DBD285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift */; };
 		E5258DC0285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258DBE285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib */; };
+		E5258DC3285D41CD00B12CFF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E5258DC2285D41CD00B12CFF /* Kingfisher */; };
 		E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D11285B3FEE000419EC /* AppDelegate.swift */; };
 		E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D13285B3FEE000419EC /* SceneDelegate.swift */; };
 		E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5339D1A285B3FEF000419EC /* Assets.xcassets */; };
@@ -138,6 +139,7 @@
 				E5CDFA7B285BC14600D00B88 /* SwiftMessages in Frameworks */,
 				E5CDFA98285BCC6100D00B88 /* Moya in Frameworks */,
 				E5CDFA78285BC0B900D00B88 /* Swinject in Frameworks */,
+				E5258DC3285D41CD00B12CFF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +574,7 @@
 				E5CDFA77285BC0B900D00B88 /* Swinject */,
 				E5CDFA7A285BC14600D00B88 /* SwiftMessages */,
 				E5CDFA97285BCC6100D00B88 /* Moya */,
+				E5258DC2285D41CD00B12CFF /* Kingfisher */,
 			);
 			productName = BostaTask;
 			productReference = E5339D0E285B3FEE000419EC /* BostaTask.app */;
@@ -650,6 +653,7 @@
 				E5CDFA76285BC0B900D00B88 /* XCRemoteSwiftPackageReference "Swinject" */,
 				E5CDFA79285BC14600D00B88 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 				E5CDFA96285BCC6100D00B88 /* XCRemoteSwiftPackageReference "Moya" */,
+				E5258DC1285D41CD00B12CFF /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E5339D0F285B3FEE000419EC /* Products */;
 			projectDirPath = "";
@@ -1092,6 +1096,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E5258DC1285D41CD00B12CFF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		E5CDFA73285BC09A00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
@@ -1127,6 +1139,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E5258DC2285D41CD00B12CFF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5258DC1285D41CD00B12CFF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		E5CDFA74285BC09A00D00B88 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E5CDFA73285BC09A00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */;

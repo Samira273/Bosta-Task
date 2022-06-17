@@ -6,21 +6,30 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AlbumDetailsCollectionViewCell: UICollectionViewCell {
-
+    
+    @IBOutlet weak var detailsImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
+   
     func configureCell(with model: AlbumDetailsModel?) {
-//        let url =  image
-//        if let url = url {
-//            productImage.kf.setImage(with: URL(string: url))
-//        } else {
-//            productImage.image = UIImage(named: "ic_pizza")
-//        }
+        let url =  URL(string: model?.url ?? "")
+        if let url = url {
+            detailsImageView.kf.setImage(with: url)
+        } else {
+            detailsImageView.image = UIImage(named: "ic_image_placeholder")
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        detailsImageView.kf.cancelDownloadTask()
     }
 
 }

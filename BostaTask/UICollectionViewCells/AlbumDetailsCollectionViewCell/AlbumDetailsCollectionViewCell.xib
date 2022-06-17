@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,16 +22,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJt-uQ-ahq">
-                                <rect key="frame" x="2" y="2" width="46" height="46"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4n8-N8-Bpy">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="whiteSmoke"/>
+                                <constraints>
+                                    <constraint firstItem="4n8-N8-Bpy" firstAttribute="top" secondItem="LJt-uQ-ahq" secondAttribute="top" id="ATk-Mo-wZx"/>
+                                    <constraint firstAttribute="bottom" secondItem="4n8-N8-Bpy" secondAttribute="bottom" id="Bmb-pH-aVg"/>
+                                    <constraint firstItem="4n8-N8-Bpy" firstAttribute="leading" secondItem="LJt-uQ-ahq" secondAttribute="leading" id="Xaw-c2-Z6y"/>
+                                    <constraint firstAttribute="trailing" secondItem="4n8-N8-Bpy" secondAttribute="trailing" id="daB-1V-yaG"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" name="whiteSmoke"/>
                         <constraints>
-                            <constraint firstItem="LJt-uQ-ahq" firstAttribute="leading" secondItem="AaY-ot-1Qa" secondAttribute="leading" constant="2" id="P51-E8-pEv"/>
-                            <constraint firstAttribute="bottom" secondItem="LJt-uQ-ahq" secondAttribute="bottom" constant="2" id="gce-2e-D3v"/>
-                            <constraint firstAttribute="trailing" secondItem="LJt-uQ-ahq" secondAttribute="trailing" constant="2" id="jbg-7h-H3K"/>
-                            <constraint firstItem="LJt-uQ-ahq" firstAttribute="top" secondItem="AaY-ot-1Qa" secondAttribute="top" constant="2" id="pvf-0Q-mKg"/>
+                            <constraint firstItem="LJt-uQ-ahq" firstAttribute="leading" secondItem="AaY-ot-1Qa" secondAttribute="leading" id="P51-E8-pEv"/>
+                            <constraint firstAttribute="bottom" secondItem="LJt-uQ-ahq" secondAttribute="bottom" id="gce-2e-D3v"/>
+                            <constraint firstAttribute="trailing" secondItem="LJt-uQ-ahq" secondAttribute="trailing" id="jbg-7h-H3K"/>
+                            <constraint firstItem="LJt-uQ-ahq" firstAttribute="top" secondItem="AaY-ot-1Qa" secondAttribute="top" id="pvf-0Q-mKg"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -44,6 +54,9 @@
                 <constraint firstAttribute="bottom" secondItem="AaY-ot-1Qa" secondAttribute="bottom" id="lPB-da-DYu"/>
                 <constraint firstItem="AaY-ot-1Qa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wiX-by-44H"/>
             </constraints>
+            <connections>
+                <outlet property="detailsImageView" destination="4n8-N8-Bpy" id="4L9-Fb-LgV"/>
+            </connections>
             <point key="canvasLocation" x="139" y="70"/>
         </collectionViewCell>
     </objects>
@@ -51,8 +64,5 @@
         <namedColor name="whiteSmoke">
             <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
