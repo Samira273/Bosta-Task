@@ -141,6 +141,13 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		E5258D8F285C9D6800B12CFF /* TableViewHeaders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewHeaders;
+			sourceTree = "<group>";
+		};
 		E5339D05285B3FED000419EC = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +176,7 @@
 				E5CDFA32285B423000D00B88 /* Services */,
 				E5CDFA42285B496C00D00B88 /* Extensions */,
 				E5258D8E285C93DD00B12CFF /* TableViewCells */,
+				E5258D8F285C9D6800B12CFF /* TableViewHeaders */,
 				E5CDFA34285B432700D00B88 /* Features */,
 				E5CDFA8F285BC8A500D00B88 /* Network */,
 				E5CDFA2F285B410000D00B88 /* Resources */,

@@ -28,17 +28,17 @@ struct ProfileModel: Codable {
         case website = "website"
     }
     
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        address = try AddressModel(from: decoder)
-        company = try CompanyModel(from: decoder)
-        email = try values.decodeIfPresent(String.self, forKey: .email)
-        id = try values.decodeIfPresent(Int.self, forKey: .id)
-        name = try values.decodeIfPresent(String.self, forKey: .name)
-        phone = try values.decodeIfPresent(String.self, forKey: .phone)
-        username = try values.decodeIfPresent(String.self, forKey: .username)
-        website = try values.decodeIfPresent(String.self, forKey: .website)
-    }
+//    init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        address = try AddressModel(from: decoder)
+//        company = try CompanyModel(from: decoder)
+//        email = try values.decodeIfPresent(String.self, forKey: .email)
+//        id = try values.decodeIfPresent(Int.self, forKey: .id)
+//        name = try values.decodeIfPresent(String.self, forKey: .name)
+//        phone = try values.decodeIfPresent(String.self, forKey: .phone)
+//        username = try values.decodeIfPresent(String.self, forKey: .username)
+//        website = try values.decodeIfPresent(String.self, forKey: .website)
+//    }
 
 }
 struct CompanyModel: Codable {
@@ -52,13 +52,13 @@ struct CompanyModel: Codable {
         case catchPhrase = "catchPhrase"
         case name = "name"
     }
-    
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        bs = try values.decodeIfPresent(String.self, forKey: .bs)
-        catchPhrase = try values.decodeIfPresent(String.self, forKey: .catchPhrase)
-        name = try values.decodeIfPresent(String.self, forKey: .name)
-    }
+//
+//    init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        bs = try values.decodeIfPresent(String.self, forKey: .bs)
+//        catchPhrase = try values.decodeIfPresent(String.self, forKey: .catchPhrase)
+//        name = try values.decodeIfPresent(String.self, forKey: .name)
+//    }
 }
 struct AddressModel: Codable {
     let city : String?
@@ -73,11 +73,11 @@ struct AddressModel: Codable {
         case suite = "suite"
         case zipcode = "zipcode"
     }
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        city = try values.decodeIfPresent(String.self, forKey: .city)
-        street = try values.decodeIfPresent(String.self, forKey: .street)
-        suite = try values.decodeIfPresent(String.self, forKey: .suite)
-        zipcode = try values.decodeIfPresent(String.self, forKey: .zipcode)
-    }
+//    init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        city = try values.decodeIfPresent(String.self, forKey: .city)
+//        street = try values.decodeIfPresent(String.self, forKey: .street)
+//        suite = try values.decodeIfPresent(String.self, forKey: .suite)
+//        zipcode = try values.decodeIfPresent(String.self, forKey: .zipcode)
+//    }
 }

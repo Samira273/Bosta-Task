@@ -63,7 +63,7 @@ class BaseVC: UIViewController {
         }
 
         self.baseVM?.showLoader = {
-            self.showLoader(view: self.view, type: .native)
+            self.showLoader(type: .native)
         }
 
         self.baseVM?.hideLoader = {
@@ -118,7 +118,7 @@ class BaseVC: UIViewController {
 
 extension BaseVC: LoaderProtocol {
 
-    func showLoader(view: UIView, type: LoaderType, backgroundColor: UIColor? = .white) {
+    func showLoader(type: LoaderType, backgroundColor: UIColor? = .white) {
         Loader.show(onView: view, type: type, backGroundColor: backgroundColor)
     }
 

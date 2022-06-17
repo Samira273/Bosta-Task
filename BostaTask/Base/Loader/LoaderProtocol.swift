@@ -9,7 +9,7 @@ import Foundation
 import  UIKit
 
 protocol LoaderProtocol {
-    func showLoader(view: UIView, type: LoaderType, backgroundColor: UIColor?)
+    func showLoader(type: LoaderType, backgroundColor: UIColor?)
     func hideLoader()
 }
 
