@@ -16,4 +16,6 @@ protocol BaseVM {
     var showLoader: (() -> Void)? {set get}
     var hideLoader: (() -> Void)? {set get}
     var showNoInternetView: (() -> Void)? {set get}
+    var updateViewWithData: (() -> Void)? {set get}
+
 }

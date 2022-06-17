@@ -14,9 +14,9 @@ class Loader {
     
     private  init() {
         bulrImage.frame = UIScreen.main.bounds
-        bulrImage.backgroundColor = .clear
+        bulrImage.backgroundColor = Asset.whiteSmoke.color
         bulrImage.isUserInteractionEnabled = true
-        bulrImage.alpha = 0.3
+        bulrImage.alpha = 0.95
         logoImage.image = Asset.icLogo.image
         logoImage.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         logoImage.contentMode = .scaleAspectFit

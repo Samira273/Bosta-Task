@@ -31,5 +31,12 @@ class VCsContainer {
         navController.setRoot(window: viewController)
           return navController
     }
+    
+    class func getAlbumDetailsScene(album: AlbumModel?) -> UIViewController {
+        guard let vc = Assembler.sharedAssembler.resolver.resolve(AlbumDetailsVC.self, argument: album) else {
+            fatalError("no album details")
+        }
+        return vc
+    }
 
 }

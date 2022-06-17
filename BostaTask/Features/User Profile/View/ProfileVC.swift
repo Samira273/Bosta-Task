@@ -33,14 +33,13 @@ class ProfileVC: BaseVC {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.isHiddenIfNeeded = false
+        self.navigationController?.navigationBar.topItem?.title = " "
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareView()
-        viewModel.updateProfileTableView = updateAlbumsDataSource
     }
    
-    
     func prepareView() {
         ProfileTableViewCell.register(with: albumsTableView)
         ProfileHeaderView.register(with: albumsTableView)
@@ -66,17 +65,25 @@ class ProfileVC: BaseVC {
       return dataSource
     }
     
-    func updateAlbumsDataSource() {
+    override func updateViewWithData() {
+        albumsTableView.reloadData()
         var snapshot = NSDiffableDataSourceSnapshot<ProfileSections, AlbumModel>()
         snapshot.appendSections(ProfileSections.allCases)
         snapshot.appendItems(viewModel.getUserAlbums() ?? [], toSection: .main)
         albumsDataSource.apply(snapshot, animatingDifferences: true)
     }
+    
 }
 
 extension ProfileVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return ProfileHeaderView.dequeue(from: tableView, with: viewModel.getUserProfile())
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let album = albumsDataSource.itemIdentifier(for: indexPath) {
+            self.navigationController?.pushViewController(VCsContainer.getAlbumDetailsScene(album: album), animated: true)
+        }
+
     }
 }
 

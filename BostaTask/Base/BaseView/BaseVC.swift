@@ -73,9 +73,15 @@ class BaseVC: UIViewController {
             Loader.shared.hide()
             self.showNoInternetView()
         }
+        
+        self.baseVM?.updateViewWithData = updateViewWithData
 
     }
-
+    
+    func updateViewWithData() {
+        fatalError("this function must be overriden")
+    }
+    
     func reload() {
       //  fatalError("func must be implmented")
         Loader.shared.show()

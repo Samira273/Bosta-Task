@@ -11,7 +11,6 @@ protocol ProfileVM: BaseVM {
     func getUserProfileData()
     func getUserAlbums() -> [AlbumModel]?
     func getUserProfile() -> ProfileModel?
-    var updateProfileTableView: (() -> Void)? {set get}
 }
 
 class ProfileVMImpl: ProfileVM {
@@ -23,19 +22,24 @@ class ProfileVMImpl: ProfileVM {
     var showLoader: (() -> Void)?
     var hideLoader: (() -> Void)?
     var showNoInternetView: (() -> Void)?
-    
+    var updateViewWithData: (() -> Void)? 
+
     var profile: ProfileModel?
     var albums: [AlbumModel]?
     
-    var updateProfileTableView: (() -> Void)?
+    
     
     func getUserProfileData() {
+        self.profile = nil
+        self.albums = nil
+        updateViewWithData?()
         showLoader?()
         NetworkManager.shared.getProfileData(id: Int.random(in: 1..<11)) {[weak self] result, statusCode in
             switch result {
             case .success(let response):
                 self?.profile = response
                 self?.modifyProfileWithFullAddress()
+                self?.updateViewWithData?()
                 self?.loadUserAlbums()
             case .failure(let error):
                 if error.isNetwork {
@@ -73,7 +77,7 @@ class ProfileVMImpl: ProfileVM {
             switch result {
             case .success(let response):
                 self?.albums = response
-                self?.updateProfileTableView?()
+                self?.updateViewWithData?()
             case .failure(let error):
                 if error.isNetwork {
                     self?.showNoInternetView?()
