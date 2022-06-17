@@ -7,50 +7,35 @@
 
 import UIKit
 
-class Loader: NSObject {
-
-    static var sharedViewSpinner: UIView?
-    static let image = UIImage()
-
-    class func show (onView: UIView, type: LoaderType, backGroundColor: UIColor? = .white) {
-        
-        if sharedViewSpinner != nil {
-            sharedViewSpinner?.removeFromSuperview()
-            sharedViewSpinner = nil
-        }
-
-        let spinnerView = UIView(frame: UIScreen.main.bounds)
-        spinnerView.backgroundColor = backGroundColor
-        let viewBackgroundLoading: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
-
-        switch type {
-        case .custom:
-            let activityIndicator = UIImageView(image: image)
-            activityIndicator.center = viewBackgroundLoading.center
-            viewBackgroundLoading.addSubview(activityIndicator)
-
-        case .native:
-            let activityIndicator = UIActivityIndicatorView(style: .large)
-            activityIndicator.color = .red
-            activityIndicator.startAnimating()
-            activityIndicator.center = viewBackgroundLoading.center
-            viewBackgroundLoading.addSubview(activityIndicator)
-        }
-
-        viewBackgroundLoading.center = spinnerView.center
-        viewBackgroundLoading.backgroundColor = UIColor.white
-        viewBackgroundLoading.alpha = 0.5
-        viewBackgroundLoading.clipsToBounds = true
-        viewBackgroundLoading.layer.cornerRadius = 15
-
-        spinnerView.addSubview(viewBackgroundLoading)
-        onView.addSubview(spinnerView)
-
-        sharedViewSpinner = spinnerView
+class Loader {
+    public static let shared = Loader()
+    var logoImage = UIImageView()
+    var bulrImage = UIImageView()
+    
+    private  init() {
+        bulrImage.frame = UIScreen.main.bounds
+        bulrImage.backgroundColor = .clear
+        bulrImage.isUserInteractionEnabled = true
+        bulrImage.alpha = 0.3
+        logoImage.image = Asset.icLogo.image
+        logoImage.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        logoImage.contentMode = .scaleAspectFit
+        logoImage.center = bulrImage.center
     }
-
-    class func hide() {
-        sharedViewSpinner?.removeFromSuperview()
-        sharedViewSpinner = nil
+    
+    func show() {
+        DispatchQueue.main.async {
+            AppManager.shared.window?.addSubview(self.bulrImage)
+            AppManager.shared.window?.addSubview(self.logoImage)
+            self.logoImage.rotate(duration: 1.5)
+        }
+    }
+    
+    func hide() {
+        DispatchQueue.main.async {
+            self.logoImage.stopRotating()
+            self.bulrImage.removeFromSuperview()
+            self.logoImage.removeFromSuperview()
+        }
     }
 }

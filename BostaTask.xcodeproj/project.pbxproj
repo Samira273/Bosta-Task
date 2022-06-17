@@ -17,7 +17,10 @@
 		E5258D9F285CB34800B12CFF /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D9E285CB34700B12CFF /* ProfileHeaderView.swift */; };
 		E5258DA1285CB35200B12CFF /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258DA0285CB35200B12CFF /* ProfileHeaderView.xib */; };
 		E5258DA3285D067B00B12CFF /* UIView+Extensoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DA2285D067B00B12CFF /* UIView+Extensoin.swift */; };
-		E5258DA7285D0B6700B12CFF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DA6285D0B6700B12CFF /* UIView+Extension.swift */; };
+		E5258DAD285D0EE000B12CFF /* AlbumDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DAC285D0EE000B12CFF /* AlbumDetailsVM.swift */; };
+		E5258DAF285D0EEA00B12CFF /* AlbumDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DAE285D0EEA00B12CFF /* AlbumDetailsModel.swift */; };
+		E5258DB2285D0F0400B12CFF /* AlbumDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DB0285D0F0400B12CFF /* AlbumDetailsVC.swift */; };
+		E5258DB3285D0F0400B12CFF /* AlbumDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258DB1285D0F0400B12CFF /* AlbumDetailsVC.xib */; };
 		E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D11285B3FEE000419EC /* AppDelegate.swift */; };
 		E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D13285B3FEE000419EC /* SceneDelegate.swift */; };
 		E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5339D1A285B3FEF000419EC /* Assets.xcassets */; };
@@ -43,7 +46,6 @@
 		E5CDFA84285BC41200D00B88 /* NoInternetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CDFA80285BC41200D00B88 /* NoInternetView.xib */; };
 		E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA82285BC41200D00B88 /* NoInternetView.swift */; };
 		E5CDFA8A285BC58700D00B88 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA88285BC58600D00B88 /* Loader.swift */; };
-		E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */; };
 		E5CDFA92285BC9EC00D00B88 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */; };
 		E5CDFA98285BCC6100D00B88 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA97285BCC6100D00B88 /* Moya */; };
 		E5CDFA9B285BCD5F00D00B88 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA9A285BCD5F00D00B88 /* ErrorHandler.swift */; };
@@ -82,7 +84,10 @@
 		E5258D9E285CB34700B12CFF /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		E5258DA0285CB35200B12CFF /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
 		E5258DA2285D067B00B12CFF /* UIView+Extensoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensoin.swift"; sourceTree = "<group>"; };
-		E5258DA6285D0B6700B12CFF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E5258DAC285D0EE000B12CFF /* AlbumDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsVM.swift; sourceTree = "<group>"; };
+		E5258DAE285D0EEA00B12CFF /* AlbumDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsModel.swift; sourceTree = "<group>"; };
+		E5258DB0285D0F0400B12CFF /* AlbumDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsVC.swift; sourceTree = "<group>"; };
+		E5258DB1285D0F0400B12CFF /* AlbumDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumDetailsVC.xib; sourceTree = "<group>"; };
 		E5339D0E285B3FEE000419EC /* BostaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BostaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5339D11285B3FEE000419EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5339D13285B3FEE000419EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,7 +114,6 @@
 		E5CDFA81285BC41200D00B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NoInternetView.xib; sourceTree = "<group>"; };
 		E5CDFA82285BC41200D00B88 /* NoInternetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
 		E5CDFA88285BC58600D00B88 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
-		E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderProtocol.swift; sourceTree = "<group>"; };
 		E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E5CDFA9A285BCD5F00D00B88 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		E5CDFA9C285BCED300D00B88 /* NetworkDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDefaults.swift; sourceTree = "<group>"; };
@@ -180,6 +184,41 @@
 				E5258DA0285CB35200B12CFF /* ProfileHeaderView.xib */,
 			);
 			path = ProfileHeaderView;
+			sourceTree = "<group>";
+		};
+		E5258DA8285D0EAF00B12CFF /* Album Details */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DAA285D0ECA00B12CFF /* Model */,
+				E5258DAB285D0ED000B12CFF /* ViewModel */,
+				E5258DA9285D0EB800B12CFF /* View */,
+			);
+			path = "Album Details";
+			sourceTree = "<group>";
+		};
+		E5258DA9285D0EB800B12CFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DB0285D0F0400B12CFF /* AlbumDetailsVC.swift */,
+				E5258DB1285D0F0400B12CFF /* AlbumDetailsVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5258DAA285D0ECA00B12CFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DAE285D0EEA00B12CFF /* AlbumDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5258DAB285D0ED000B12CFF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DAC285D0EE000B12CFF /* AlbumDetailsVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E5339D05285B3FED000419EC = {
@@ -294,6 +333,7 @@
 		E5CDFA34285B432700D00B88 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E5258DA8285D0EAF00B12CFF /* Album Details */,
 				E5CDFA35285B432E00D00B88 /* User Profile */,
 			);
 			path = Features;
@@ -340,7 +380,6 @@
 			children = (
 				E5CDFA43285B497C00D00B88 /* NotificationName+Extension.swift */,
 				E5258DA2285D067B00B12CFF /* UIView+Extensoin.swift */,
-				E5258DA6285D0B6700B12CFF /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -420,7 +459,6 @@
 			isa = PBXGroup;
 			children = (
 				E5CDFA88285BC58600D00B88 /* Loader.swift */,
-				E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */,
 			);
 			path = Loader;
 			sourceTree = "<group>";
@@ -599,6 +637,7 @@
 				E5CDFA55285B572F00D00B88 /* SplashVC.xib in Resources */,
 				E5339D1E285B3FEF000419EC /* LaunchScreen.storyboard in Resources */,
 				E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */,
+				E5258DB3285D0F0400B12CFF /* AlbumDetailsVC.xib in Resources */,
 				E5CDFA84285BC41200D00B88 /* NoInternetView.xib in Resources */,
 				E5258D8D285C93C900B12CFF /* ProfileVC.xib in Resources */,
 				E5258DA1285CB35200B12CFF /* ProfileHeaderView.xib in Resources */,
@@ -657,6 +696,7 @@
 				E5CDFA47285B4A0700D00B88 /* VCsContainer.swift in Sources */,
 				E5CDFA4A285B4A3A00D00B88 /* Assembler.swift in Sources */,
 				E5258DA3285D067B00B12CFF /* UIView+Extensoin.swift in Sources */,
+				E5258DAD285D0EE000B12CFF /* AlbumDetailsVM.swift in Sources */,
 				E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */,
 				E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */,
 				E5258D8C285C93C900B12CFF /* ProfileVC.swift in Sources */,
@@ -665,16 +705,16 @@
 				E5258D89285C93B500B12CFF /* ProfileVM.swift in Sources */,
 				E5258D85285C7EBE00B12CFF /* ProfileModel.swift in Sources */,
 				E5258D9F285CB34800B12CFF /* ProfileHeaderView.swift in Sources */,
-				E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */,
+				E5258DB2285D0F0400B12CFF /* AlbumDetailsVC.swift in Sources */,
 				E5CDFA62285B64B100D00B88 /* BaseVM.swift in Sources */,
 				E5CDFA92285BC9EC00D00B88 /* NetworkManager.swift in Sources */,
+				E5258DAF285D0EEA00B12CFF /* AlbumDetailsModel.swift in Sources */,
 				E5CDFAA6285BD4CD00D00B88 /* AlbumsAPIs.swift in Sources */,
 				E5CDFA5E285B63D600D00B88 /* BaseVC.swift in Sources */,
 				E5CDFA4E285B4A5D00D00B88 /* ProfileAssembly.swift in Sources */,
 				E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */,
 				E5CDFA31285B413900D00B88 /* Assets.swift in Sources */,
 				E5CDFA9D285BCED300D00B88 /* NetworkDefaults.swift in Sources */,
-				E5258DA7285D0B6700B12CFF /* UIView+Extension.swift in Sources */,
 				E5CDFAA1285BD0EF00D00B88 /* NetworkManager+Extension.swift in Sources */,
 				E5CDFA9B285BCD5F00D00B88 /* ErrorHandler.swift in Sources */,
 				E5CDFA3A285B480700D00B88 /* AppManager.swift in Sources */,
