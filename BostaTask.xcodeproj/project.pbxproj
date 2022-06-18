@@ -29,11 +29,11 @@
 		E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D13285B3FEE000419EC /* SceneDelegate.swift */; };
 		E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5339D1A285B3FEF000419EC /* Assets.xcassets */; };
 		E5339D1E285B3FEF000419EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5339D1C285B3FEF000419EC /* LaunchScreen.storyboard */; };
-		E5339D29285B3FEF000419EC /* BostaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D28285B3FEF000419EC /* BostaTaskTests.swift */; };
 		E5339D33285B3FEF000419EC /* BostaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D32285B3FEF000419EC /* BostaTaskUITests.swift */; };
 		E5339D35285B3FEF000419EC /* BostaTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D34285B3FEF000419EC /* BostaTaskUITestsLaunchTests.swift */; };
 		E54F3E36285DAB770012DFFF /* ImageViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54F3E34285DAB770012DFFF /* ImageViewerVC.swift */; };
 		E54F3E37285DAB770012DFFF /* ImageViewerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E54F3E35285DAB770012DFFF /* ImageViewerVC.xib */; };
+		E54F3E53285DBACD0012DFFF /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54F3E52285DBACD0012DFFF /* NetworkManagerTests.swift */; };
 		E5CDFA31285B413900D00B88 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA30285B413900D00B88 /* Assets.swift */; };
 		E5CDFA3A285B480700D00B88 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA39285B480700D00B88 /* AppManager.swift */; };
 		E5CDFA44285B497C00D00B88 /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA43285B497C00D00B88 /* NotificationName+Extension.swift */; };
@@ -104,12 +104,12 @@
 		E5339D1D285B3FEF000419EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5339D1F285B3FEF000419EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5339D24285B3FEF000419EC /* BostaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5339D28285B3FEF000419EC /* BostaTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaTaskTests.swift; sourceTree = "<group>"; };
 		E5339D2E285B3FEF000419EC /* BostaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5339D32285B3FEF000419EC /* BostaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaTaskUITests.swift; sourceTree = "<group>"; };
 		E5339D34285B3FEF000419EC /* BostaTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E54F3E34285DAB770012DFFF /* ImageViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerVC.swift; sourceTree = "<group>"; };
 		E54F3E35285DAB770012DFFF /* ImageViewerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewerVC.xib; sourceTree = "<group>"; };
+		E54F3E52285DBACD0012DFFF /* NetworkManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		E5CDFA30285B413900D00B88 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		E5CDFA39285B480700D00B88 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		E5CDFA43285B497C00D00B88 /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 		E5339D27285B3FEF000419EC /* BostaTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				E5339D28285B3FEF000419EC /* BostaTaskTests.swift */,
+				E54F3E52285DBACD0012DFFF /* NetworkManagerTests.swift */,
 			);
 			path = BostaTaskTests;
 			sourceTree = "<group>";
@@ -790,7 +790,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5339D29285B3FEF000419EC /* BostaTaskTests.swift in Sources */,
+				E54F3E53285DBACD0012DFFF /* NetworkManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,6 +1013,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9A2T32256;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -1032,6 +1033,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9A2T32256;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -1050,6 +1052,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9A2T32256;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bosta.BostaTaskUITests;
@@ -1067,6 +1070,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9A2T32256;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bosta.BostaTaskUITests;
