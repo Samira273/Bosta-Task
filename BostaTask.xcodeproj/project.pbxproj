@@ -25,6 +25,8 @@
 		E5258DBF285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DBD285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift */; };
 		E5258DC0285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258DBE285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib */; };
 		E5258DC3285D41CD00B12CFF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E5258DC2285D41CD00B12CFF /* Kingfisher */; };
+		E5322B1D285E091E00134834 /* NoSearchResultsAvailbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5322B1C285E091E00134834 /* NoSearchResultsAvailbleView.swift */; };
+		E5322B1F285E092500134834 /* NoSearchResultsAvailbleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5322B1E285E092500134834 /* NoSearchResultsAvailbleView.xib */; };
 		E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D11285B3FEE000419EC /* AppDelegate.swift */; };
 		E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D13285B3FEE000419EC /* SceneDelegate.swift */; };
 		E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5339D1A285B3FEF000419EC /* Assets.xcassets */; };
@@ -97,6 +99,8 @@
 		E5258DB8285D2AED00B12CFF /* AlbumAPIs+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumAPIs+Network.swift"; sourceTree = "<group>"; };
 		E5258DBD285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E5258DBE285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5322B1C285E091E00134834 /* NoSearchResultsAvailbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSearchResultsAvailbleView.swift; sourceTree = "<group>"; };
+		E5322B1E285E092500134834 /* NoSearchResultsAvailbleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoSearchResultsAvailbleView.xib; sourceTree = "<group>"; };
 		E5339D0E285B3FEE000419EC /* BostaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BostaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5339D11285B3FEE000419EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5339D13285B3FEE000419EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +262,15 @@
 			path = AlbumDetailsCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		E5322B1B285E08DC00134834 /* No Search Results */ = {
+			isa = PBXGroup;
+			children = (
+				E5322B1C285E091E00134834 /* NoSearchResultsAvailbleView.swift */,
+				E5322B1E285E092500134834 /* NoSearchResultsAvailbleView.xib */,
+			);
+			path = "No Search Results";
+			sourceTree = "<group>";
+		};
 		E5339D05285B3FED000419EC = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +340,7 @@
 		E54F3E33285DAB5B0012DFFF /* Custome Usages */ = {
 			isa = PBXGroup;
 			children = (
+				E5322B1B285E08DC00134834 /* No Search Results */,
 				E54F3E32285DAB4B0012DFFF /* ImageViewerVC */,
 			);
 			path = "Custome Usages";
@@ -694,6 +708,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E54F3E37285DAB770012DFFF /* ImageViewerVC.xib in Resources */,
+				E5322B1F285E092500134834 /* NoSearchResultsAvailbleView.xib in Resources */,
 				E5CDFA55285B572F00D00B88 /* SplashVC.xib in Resources */,
 				E5339D1E285B3FEF000419EC /* LaunchScreen.storyboard in Resources */,
 				E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */,
@@ -760,6 +775,7 @@
 				E5CDFA4A285B4A3A00D00B88 /* Assembler.swift in Sources */,
 				E5258DA3285D067B00B12CFF /* UIView+Extensoin.swift in Sources */,
 				E5258DAD285D0EE000B12CFF /* AlbumDetailsVM.swift in Sources */,
+				E5322B1D285E091E00134834 /* NoSearchResultsAvailbleView.swift in Sources */,
 				E54F3E36285DAB770012DFFF /* ImageViewerVC.swift in Sources */,
 				E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */,
 				E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */,

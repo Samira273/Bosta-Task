@@ -8,7 +8,7 @@
 import UIKit
 
 class AlbumDetailsVC: BaseVC {
-    
+    //MARK: - Properties
     @IBOutlet weak var detailsCollectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -17,6 +17,7 @@ class AlbumDetailsVC: BaseVC {
     
     var viewModel: AlbumDetailsVM!
     
+    //MARK: - Inits
     init(viewModel: AlbumDetailsVM) {
         self.viewModel = viewModel
         super.init(viewModel)
@@ -26,6 +27,7 @@ class AlbumDetailsVC: BaseVC {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Life cycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if isSearching {
@@ -46,19 +48,13 @@ class AlbumDetailsVC: BaseVC {
         singleTapGestureRecognizer.cancelsTouchesInView = false
         self.view.addGestureRecognizer(singleTapGestureRecognizer)
     }
-    
-    @objc func singleTap(sender: UITapGestureRecognizer) {
-        self.searchBar.resignFirstResponder()
-        if self.searchBar.text?.isEmpty ?? true {
-            updateView(with: viewModel.getAlbumDetails())
-        }
-    }
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareView()
     }
     
+    //MARK: - prepare view
     func prepareView() {
         AlbumDetailsCollectionViewCell.register(with: detailsCollectionView)
         detailsCollectionView.collectionViewLayout = createLayout()
@@ -73,10 +69,10 @@ class AlbumDetailsVC: BaseVC {
         let button =  UIButton(type: .custom)
         button.addTarget(self, action: #selector(backTapped), for: .touchUpInside)
         button.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 20, height: 31)
-        let imageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
+        let imageView = UIImageView.init(frame: CGRect(x: -10, y: 0, width: 25, height: 25))
         imageView.image = Asset.icBack.image
         button.addSubview(imageView)
-        let label = UILabel(frame: CGRect(x: 25, y: 0, width: button.frame.width - 30, height: 20))
+        let label = UILabel(frame: CGRect(x: 15, y: 0, width: button.frame.width - 30, height: 20))
         label.font = .systemFont(ofSize: 20, weight: .bold)
         label.text = viewModel.getAlbum()?.title
         label.textAlignment = .center
@@ -86,25 +82,6 @@ class AlbumDetailsVC: BaseVC {
         button.addSubview(label)
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.leftBarButtonItem = barButton
-    }
-    
-    @objc func backTapped() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    override func updateViewWithData() {
-        var snapshot = NSDiffableDataSourceSnapshot<Sections, AlbumDetailsModel>()
-        snapshot.appendSections([.main])
-        snapshot.appendItems(viewModel.getAlbumDetails() ?? [])
-        albumDetailsCollectionViewDataSource.apply(snapshot, animatingDifferences: true)
-    }
-    
-    func updateView(with models: [AlbumDetailsModel]?) {
-        var currentSnapshot = albumDetailsCollectionViewDataSource.snapshot()
-        currentSnapshot.deleteAllItems()
-        currentSnapshot.appendSections([.main])
-        currentSnapshot.appendItems(models ?? [], toSection: .main)
-        albumDetailsCollectionViewDataSource.apply(currentSnapshot, animatingDifferences: false)
     }
     
     private func createLayout() -> UICollectionViewLayout {
@@ -124,7 +101,45 @@ class AlbumDetailsVC: BaseVC {
         
         return layout
     }
+
     
+    //MARK: - Actions
+    
+    @objc func singleTap(sender: UITapGestureRecognizer) {
+        self.searchBar.resignFirstResponder()
+        if self.searchBar.text?.isEmpty ?? true {
+            updateView(with: viewModel.getAlbumDetails())
+        }
+    }
+
+    @objc func backTapped() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    //MARK: - Bind data to view
+    
+    override func updateViewWithData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Sections, AlbumDetailsModel>()
+        detailsCollectionView.backgroundView = nil
+        snapshot.appendSections([.main])
+        snapshot.appendItems(viewModel.getAlbumDetails() ?? [])
+        albumDetailsCollectionViewDataSource.apply(snapshot, animatingDifferences: true)
+    }
+    
+    func updateView(with models: [AlbumDetailsModel]?) {
+        if models?.isEmpty ?? true {
+            detailsCollectionView.backgroundView = NoSearchResultsAvailbleView()
+            return
+        }
+        detailsCollectionView.backgroundView = nil
+        var currentSnapshot = albumDetailsCollectionViewDataSource.snapshot()
+        currentSnapshot.deleteAllItems()
+        currentSnapshot.appendSections([.main])
+        currentSnapshot.appendItems(models ?? [], toSection: .main)
+        albumDetailsCollectionViewDataSource.apply(currentSnapshot, animatingDifferences: false)
+    }
+    
+    //MARK: - Datasource preparation
     private func makeDataSource() -> UICollectionViewDiffableDataSource<Sections, AlbumDetailsModel> {
         return UICollectionViewDiffableDataSource<Sections, AlbumDetailsModel>(
             collectionView: detailsCollectionView) {(collectionView, indexPath, albumDetails) -> UICollectionViewCell? in
@@ -133,7 +148,7 @@ class AlbumDetailsVC: BaseVC {
     }
     
 }
-
+//MARK: - UICollectionViewDelegate
 extension AlbumDetailsVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -145,7 +160,7 @@ extension AlbumDetailsVC: UICollectionViewDelegate {
         }
     }
 }
-
+//MARK: - UISearchBarDelegate
 extension AlbumDetailsVC: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         viewModel.searchBarDidChange(with: searchText)

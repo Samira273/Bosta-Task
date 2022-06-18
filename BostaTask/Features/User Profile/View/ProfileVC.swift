@@ -48,7 +48,7 @@ class ProfileVC: BaseVC {
         ProfileTableViewCell.register(with: albumsTableView)
         ProfileHeaderView.register(with: albumsTableView)
         albumsTableView.estimatedRowHeight = UITableView.automaticDimension
-        albumsTableView.estimatedSectionFooterHeight = UITableView.automaticDimension
+        albumsTableView.estimatedSectionHeaderHeight = 170
         albumsTableView.delegate = self
         albumsTableView.dataSource = albumsDataSource
     }
@@ -90,6 +90,14 @@ extension ProfileVC: UITableViewDelegate {
             self.navigationController?.pushViewController(VCsContainer.getAlbumDetailsScene(album: album), animated: true)
         }
 
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }
 
