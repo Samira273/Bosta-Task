@@ -34,7 +34,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="saf-8u-XfF">
-                            <rect key="frame" x="0.0" y="44" width="414" height="808"/>
+                            <rect key="frame" x="0.0" y="49" width="414" height="803"/>
                             <color key="backgroundColor" name="whiteSmoke"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WEi-XE-57d">
                                 <size key="itemSize" width="128" height="128"/>
@@ -52,7 +52,7 @@
                         <constraint firstAttribute="trailing" secondItem="saf-8u-XfF" secondAttribute="trailing" id="Mla-eh-str"/>
                         <constraint firstAttribute="trailing" secondItem="RDO-qR-xG1" secondAttribute="trailing" id="atQ-gy-FAP"/>
                         <constraint firstItem="RDO-qR-xG1" firstAttribute="top" secondItem="gPV-AM-G35" secondAttribute="top" id="fBJ-aL-8d2"/>
-                        <constraint firstItem="saf-8u-XfF" firstAttribute="top" secondItem="RDO-qR-xG1" secondAttribute="bottom" id="oup-Yu-kw6"/>
+                        <constraint firstItem="saf-8u-XfF" firstAttribute="top" secondItem="RDO-qR-xG1" secondAttribute="bottom" constant="5" id="oup-Yu-kw6"/>
                     </constraints>
                 </view>
             </subviews>
@@ -69,7 +69,7 @@
     </objects>
     <resources>
         <namedColor name="whiteSmoke">
-            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

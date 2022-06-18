@@ -127,16 +127,15 @@ class AlbumDetailsVC: BaseVC {
     }
     
     func updateView(with models: [AlbumDetailsModel]?) {
-        if models?.isEmpty ?? true {
-            detailsCollectionView.backgroundView = NoSearchResultsAvailbleView()
-            return
-        }
         detailsCollectionView.backgroundView = nil
         var currentSnapshot = albumDetailsCollectionViewDataSource.snapshot()
         currentSnapshot.deleteAllItems()
         currentSnapshot.appendSections([.main])
         currentSnapshot.appendItems(models ?? [], toSection: .main)
         albumDetailsCollectionViewDataSource.apply(currentSnapshot, animatingDifferences: false)
+        if models?.isEmpty ?? true {
+            detailsCollectionView.backgroundView = NoSearchResultsAvailbleView()
+        }
     }
     
     //MARK: - Datasource preparation
