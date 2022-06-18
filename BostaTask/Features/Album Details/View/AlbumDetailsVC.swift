@@ -13,6 +13,7 @@ class AlbumDetailsVC: BaseVC {
     @IBOutlet weak var searchBar: UISearchBar!
     
     private lazy var albumDetailsCollectionViewDataSource = makeDataSource()
+    var isSearching = false
     
     var viewModel: AlbumDetailsVM!
     
@@ -27,7 +28,11 @@ class AlbumDetailsVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel.loadAlbumDetailsData()
+        if isSearching {
+            updateView(with: viewModel.getSearchResults())
+        } else {
+            viewModel.loadAlbumDetailsData()
+        }
         DispatchQueue.main.async {
             self.configureNavBar()
         }
@@ -37,6 +42,18 @@ class AlbumDetailsVC: BaseVC {
         super.viewDidAppear(animated)
         DispatchQueue.main.async {
             self.configureNavBar()
+        }
+        let singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.singleTap(sender:)))
+        singleTapGestureRecognizer.numberOfTapsRequired = 1
+        singleTapGestureRecognizer.isEnabled = true
+        singleTapGestureRecognizer.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(singleTapGestureRecognizer)
+    }
+    
+    @objc func singleTap(sender: UITapGestureRecognizer) {
+        self.searchBar.resignFirstResponder()
+        if self.searchBar.text?.isEmpty ?? true {
+            updateView(with: viewModel.getAlbumDetails())
         }
     }
     
@@ -117,11 +134,13 @@ extension AlbumDetailsVC: UICollectionViewDelegate {
 extension AlbumDetailsVC: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         viewModel.searchBarDidChange(with: searchText)
+        isSearching = true
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("searchBarSearchButtonClicked")
         if searchBar.text?.isEmpty ?? true {
             updateView(with: viewModel.getAlbumDetails())
+            isSearching = false
         }
         searchBar.resignFirstResponder()
     }
