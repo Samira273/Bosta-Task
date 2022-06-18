@@ -9,12 +9,13 @@ import UIKit
 
 class ProfileVC: BaseVC {
 
-   
-    @IBOutlet weak var albumsTableView: UITableView!
+    //MARK: - Properties
     
+    @IBOutlet weak var albumsTableView: UITableView!
     var viewModel: ProfileVM!
     private lazy var albumsDataSource = makeAlbumsDataSource()
     
+    //MARK: - Inits
     init(viewModel: ProfileVM) {
         self.viewModel = viewModel
         super.init(viewModel)
@@ -24,6 +25,7 @@ class ProfileVC: BaseVC {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Life cycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.getUserProfileData()
@@ -39,16 +41,18 @@ class ProfileVC: BaseVC {
         super.viewDidLoad()
         prepareView()
     }
+    
+    //MARK: - Prepare view and data source
    
     func prepareView() {
         ProfileTableViewCell.register(with: albumsTableView)
         ProfileHeaderView.register(with: albumsTableView)
         albumsTableView.estimatedRowHeight = UITableView.automaticDimension
+        albumsTableView.estimatedSectionFooterHeight = UITableView.automaticDimension
         albumsTableView.delegate = self
         albumsTableView.dataSource = albumsDataSource
     }
 
-    
     func makeAlbumsDataSource() -> UITableViewDiffableDataSource<Sections, AlbumModel> {
         
       let dataSource = UITableViewDiffableDataSource<Sections, AlbumModel>(
@@ -65,6 +69,8 @@ class ProfileVC: BaseVC {
       return dataSource
     }
     
+    
+    //MARK: - binding data
     override func updateViewWithData() {
         albumsTableView.reloadData()
         var snapshot = NSDiffableDataSourceSnapshot<Sections, AlbumModel>()
