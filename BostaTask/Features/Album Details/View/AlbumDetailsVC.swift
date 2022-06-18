@@ -71,7 +71,7 @@ class AlbumDetailsVC: BaseVC {
     func configureNavBar() {
         
         let button =  UIButton(type: .custom)
-        button.addTarget(self, action: #selector(back), for: .touchUpInside)
+        button.addTarget(self, action: #selector(backTapped), for: .touchUpInside)
         button.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 20, height: 31)
         let imageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
         imageView.image = Asset.icBack.image
@@ -88,7 +88,7 @@ class AlbumDetailsVC: BaseVC {
         self.navigationItem.leftBarButtonItem = barButton
     }
     
-    @objc func back() {
+    @objc func backTapped() {
         self.navigationController?.popViewController(animated: true)
     }
     
