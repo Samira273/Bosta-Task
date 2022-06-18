@@ -27,14 +27,14 @@ class ProfileVMImpl: ProfileVM {
     var profile: ProfileModel?
     var albums: [AlbumModel]?
     
-    
+    var id = Int.random(in: 1..<11)
     
     func getUserProfileData() {
         self.profile = nil
         self.albums = nil
         updateViewWithData?()
         showLoader?()
-        NetworkManager.shared.getProfileData(id: Int.random(in: 1..<11)) {[weak self] result, statusCode in
+        NetworkManager.shared.getProfileData(id: self.id) {[weak self] result, statusCode in
             switch result {
             case .success(let response):
                 self?.profile = response
