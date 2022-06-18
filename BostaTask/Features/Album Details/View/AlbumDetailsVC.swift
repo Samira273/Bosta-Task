@@ -75,7 +75,7 @@ class AlbumDetailsVC: BaseVC {
         let label = UILabel(frame: CGRect(x: 15, y: 0, width: button.frame.width - 30, height: 20))
         label.font = .systemFont(ofSize: 20, weight: .bold)
         label.text = viewModel.getAlbum()?.title
-        label.textAlignment = .center
+        label.textAlignment = .left
         label.textColor = Asset.darkGray.color
         label.backgroundColor =  .clear
         label.lineBreakMode = .byTruncatingTail
