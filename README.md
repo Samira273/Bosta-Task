@@ -8,3 +8,4 @@ There's also searching in the current images by title.
 Also you can select any image in the album and it'll be shown in a viewer you can zoom in and out, and share it through your social apps.
 Also I've made some unit-test for the network layer.
 
+![Untitled](https://user-images.githubusercontent.com/46921426/174447582-552446c0-be9f-4d72-9e91-1cd39ae60739.gif)
