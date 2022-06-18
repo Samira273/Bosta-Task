@@ -38,5 +38,12 @@ class VCsContainer {
         }
         return vc
     }
+    
+    class func getImageViewer(with image: UIImage?) -> UIViewController{
+        guard let vc = Assembler.sharedAssembler.resolver.resolve(ImageViewerVC.self, argument: image) else {
+            fatalError("No image viewer")
+        }
+        return vc
+    }
 
 }

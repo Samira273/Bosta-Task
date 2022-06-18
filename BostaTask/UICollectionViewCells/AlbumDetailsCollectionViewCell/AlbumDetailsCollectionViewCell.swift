@@ -12,7 +12,7 @@ class AlbumDetailsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var detailsImageView: UIImageView!
     let activityInd = UIActivityIndicatorView()
-    
+    var imageData: UIImage?
     override func awakeFromNib() {
         super.awakeFromNib()
        
@@ -27,8 +27,13 @@ class AlbumDetailsCollectionViewCell: UICollectionViewCell {
             activityInd.color = UIColor.red
             detailsImageView.addSubview(activityInd)
             activityInd.startAnimating()
-            detailsImageView.kf.setImage(with: url, placeholder: nil, options: nil) {[weak self] _ in
+            detailsImageView.kf.setImage(with: url, placeholder: nil, options: nil) {[weak self] resut in
                 self?.activityInd.stopAnimating()
+                switch resut {
+                case .success(let image):
+                    self?.imageData = image.image
+                default: break
+                }                
             }
         } else {
             detailsImageView.image = UIImage(named: "ic_image_placeholder")

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewerVC" customModule="BostaTask" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="L5A-jS-eNp" id="Nwv-VJ-XCe"/>
+                <outlet property="scrollView" destination="GOA-qm-Are" id="lA0-X8-QUJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOA-qm-Are">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L5A-jS-eNp">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="L5A-jS-eNp" secondAttribute="trailing" id="1Av-48-qT4"/>
+                        <constraint firstItem="L5A-jS-eNp" firstAttribute="leading" secondItem="GOA-qm-Are" secondAttribute="leading" id="Ich-7L-gGT"/>
+                        <constraint firstAttribute="bottom" secondItem="L5A-jS-eNp" secondAttribute="bottom" id="J2H-rG-ENb"/>
+                        <constraint firstItem="L5A-jS-eNp" firstAttribute="width" secondItem="GOA-qm-Are" secondAttribute="width" id="odL-lm-Xhz"/>
+                        <constraint firstItem="L5A-jS-eNp" firstAttribute="top" secondItem="GOA-qm-Are" secondAttribute="top" id="sKm-gh-wZt"/>
+                        <constraint firstItem="L5A-jS-eNp" firstAttribute="height" secondItem="GOA-qm-Are" secondAttribute="height" priority="750" id="zmH-sz-U6Q"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="oTs-QM-9za"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="GOA-qm-Are" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2fh-tI-4C6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GOA-qm-Are" secondAttribute="trailing" id="QAP-86-X8f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GOA-qm-Are" secondAttribute="bottom" id="X0c-Q7-dIP"/>
+                <constraint firstItem="GOA-qm-Are" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lvK-X0-LrF"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="70"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

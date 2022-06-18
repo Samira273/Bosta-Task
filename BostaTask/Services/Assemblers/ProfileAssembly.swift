@@ -7,6 +7,7 @@
 
 import Foundation
 import Swinject
+import UIKit
 
 class ProfileAssembly: Assembly {
     
@@ -24,6 +25,10 @@ class ProfileAssembly: Assembly {
         
         container.register(AlbumDetailsVC.self) { (r: Resolver, arg: AlbumModel?) in
             AlbumDetailsVC(viewModel: r.resolve(AlbumDetailsVM.self, argument: arg)!)
+        }
+        
+        container.register(ImageViewerVC.self) { (r: Resolver, arg: UIImage?) in
+            ImageViewerVC(image: arg)
         }
         
     }

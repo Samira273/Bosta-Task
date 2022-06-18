@@ -15,6 +15,7 @@ class AlbumDetailsVC: BaseVC {
     private lazy var albumDetailsCollectionViewDataSource = makeDataSource()
     
     var viewModel: AlbumDetailsVM!
+    
     init(viewModel: AlbumDetailsVM) {
         self.viewModel = viewModel
         super.init(viewModel)
@@ -49,15 +50,8 @@ class AlbumDetailsVC: BaseVC {
         detailsCollectionView.collectionViewLayout = createLayout()
         detailsCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         searchBar.delegate = self
+        detailsCollectionView.delegate = self
         viewModel.updateSearchResult = updateView(with:)
-    }
-    
-    func updateView(with models: [AlbumDetailsModel]?) {
-        var currentSnapshot = albumDetailsCollectionViewDataSource.snapshot()
-        currentSnapshot.deleteAllItems()
-        currentSnapshot.appendSections([.main])
-        currentSnapshot.appendItems(models ?? [], toSection: .main)
-        albumDetailsCollectionViewDataSource.apply(currentSnapshot, animatingDifferences: false)
     }
     
     func configureNavBar() {
@@ -71,6 +65,14 @@ class AlbumDetailsVC: BaseVC {
         snapshot.appendSections([.main])
         snapshot.appendItems(viewModel.getAlbumDetails() ?? [])
         albumDetailsCollectionViewDataSource.apply(snapshot, animatingDifferences: true)
+    }
+    
+    func updateView(with models: [AlbumDetailsModel]?) {
+        var currentSnapshot = albumDetailsCollectionViewDataSource.snapshot()
+        currentSnapshot.deleteAllItems()
+        currentSnapshot.appendSections([.main])
+        currentSnapshot.appendItems(models ?? [], toSection: .main)
+        albumDetailsCollectionViewDataSource.apply(currentSnapshot, animatingDifferences: false)
     }
     
     private func createLayout() -> UICollectionViewLayout {
@@ -98,6 +100,18 @@ class AlbumDetailsVC: BaseVC {
         }
     }
     
+}
+
+extension AlbumDetailsVC: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if let cell = collectionView.cellForItem(at: indexPath) as? AlbumDetailsCollectionViewCell {
+
+            guard let image = cell.imageData else { return }
+            self.navigationController?.pushViewController(VCsContainer.getImageViewer(with: image), animated: true)
+        }
+    }
 }
 
 extension AlbumDetailsVC: UISearchBarDelegate {

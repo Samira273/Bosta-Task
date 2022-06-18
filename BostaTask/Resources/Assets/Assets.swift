@@ -27,6 +27,7 @@ internal enum Asset {
   internal static let icImagePlaceholder = ImageAsset(name: "ic_image_placeholder")
   internal static let icLogo = ImageAsset(name: "ic_logo")
   internal static let icNoInternet = ImageAsset(name: "ic_no_internet")
+  internal static let icShare = ImageAsset(name: "ic_share")
   internal static let whiteSmoke = ColorAsset(name: "whiteSmoke")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
