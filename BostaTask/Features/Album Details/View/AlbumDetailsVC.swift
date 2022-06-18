@@ -33,9 +33,6 @@ class AlbumDetailsVC: BaseVC {
         } else {
             viewModel.loadAlbumDetailsData()
         }
-//        DispatchQueue.main.async {
-//            self.configureNavBar()
-//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
