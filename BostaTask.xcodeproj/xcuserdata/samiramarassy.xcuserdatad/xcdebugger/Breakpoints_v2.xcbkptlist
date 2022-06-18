@@ -212,5 +212,365 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "883A51F0-E678-47B3-A2A3-F7FA720EFA3B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTaskTests/BostaTaskTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "testGepUserProfile()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "883A51F0-E678-47B3-A2A3-F7FA720EFA3B - 6db4a5049661830"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;BostaTask.ProfileModel, BostaTask.ErrorHandler&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in BostaTaskTests.BostaTaskTests.testGepUserProfile() -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "883A51F0-E678-47B3-A2A3-F7FA720EFA3B - 17e62c3ffebbd8ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;BostaTask.ProfileModel, BostaTask.ErrorHandler&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "883A51F0-E678-47B3-A2A3-F7FA720EFA3B - 17e62c3ffebbd8ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;BostaTask.ProfileModel, BostaTask.ErrorHandler&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1000">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50CE28C6-92D2-49E3-BD68-D4C0565EBA2B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTaskTests/BostaTaskTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "testGepUserProfile()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "50CE28C6-92D2-49E3-BD68-D4C0565EBA2B - 6db4a5049661813"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;BostaTask.ProfileModel, BostaTask.ErrorHandler&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in BostaTaskTests.BostaTaskTests.testGepUserProfile() -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "50CE28C6-92D2-49E3-BD68-D4C0565EBA2B - 6db4a5049661813"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;BostaTask.ProfileModel, BostaTask.ErrorHandler&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in BostaTaskTests.BostaTaskTests.testGepUserProfile() -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "50CE28C6-92D2-49E3-BD68-D4C0565EBA2B - 17e62c3ffebbd88f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;BostaTask.ProfileModel, BostaTask.ErrorHandler&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "50CE28C6-92D2-49E3-BD68-D4C0565EBA2B - 17e62c3ffebbd88f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;BostaTask.ProfileModel, BostaTask.ErrorHandler&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "50CE28C6-92D2-49E3-BD68-D4C0565EBA2B - 17e62c3ffebbd88f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;BostaTask.ProfileModel, BostaTask.ErrorHandler&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "50CE28C6-92D2-49E3-BD68-D4C0565EBA2B - 17e62c3ffebbd88f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;BostaTask.ProfileModel, BostaTask.ErrorHandler&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "568">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCA148DB-EA5D-461F-B6AA-827B95C9B13B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTaskTests/BostaTaskTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "testGepUserProfile()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BCA148DB-EA5D-461F-B6AA-827B95C9B13B - c3076b3f166c6e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTaskTests.BostaTaskTests.testGepUserProfile() -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "BCA148DB-EA5D-461F-B6AA-827B95C9B13B - 4f1dc45b857e672c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "BCA148DB-EA5D-461F-B6AA-827B95C9B13B - 4f1dc45b857e672c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4643A1CA-FCEE-43D2-A672-33D803D00B03"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTaskTests/BostaTaskTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "testGepUserProfile()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4643A1CA-FCEE-43D2-A672-33D803D00B03 - c3076b3f166c6b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTaskTests.BostaTaskTests.testGepUserProfile() -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "888">
+               </Location>
+               <Location
+                  uuid = "4643A1CA-FCEE-43D2-A672-33D803D00B03 - 4f1dc45b857e6772"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "936">
+               </Location>
+               <Location
+                  uuid = "4643A1CA-FCEE-43D2-A672-33D803D00B03 - 4f1dc45b857e6772"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "592">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87232C4C-9EF6-4363-8D59-390C79A863B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTaskTests/BostaTaskTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "testGepUserProfile()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "87232C4C-9EF6-4363-8D59-390C79A863B2 - c3076b3f166c689"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTaskTests.BostaTaskTests.testGepUserProfile() -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "776">
+               </Location>
+               <Location
+                  uuid = "87232C4C-9EF6-4363-8D59-390C79A863B2 - 4f1dc45b857e674d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "824">
+               </Location>
+               <Location
+                  uuid = "87232C4C-9EF6-4363-8D59-390C79A863B2 - 4f1dc45b857e674d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTaskTests.BostaTaskTests.testGepUserProfile() async -&gt; ()"
+                  moduleName = "BostaTaskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTaskTests/BostaTaskTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "480">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

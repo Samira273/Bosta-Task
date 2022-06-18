@@ -6,7 +6,11 @@
 //
 
 import Foundation
-struct ProfileModel: Codable {
+struct ProfileModel: Codable, Equatable {
+    static func == (lhs: ProfileModel, rhs: ProfileModel) -> Bool {
+        lhs.id == rhs.id
+    }
+    
     
     var address : AddressModel?
     let company : CompanyModel?
