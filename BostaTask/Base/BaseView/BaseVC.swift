@@ -43,7 +43,7 @@ class BaseVC: UIViewController {
     func setupViewModel() {
 
         self.baseVM?.showErrorAlertClosure = { msg in
-            self.hideLoader()
+            Loader.shared.hide()
             self.showError(message: msg ?? "")
         }
 
@@ -63,20 +63,28 @@ class BaseVC: UIViewController {
         }
 
         self.baseVM?.showLoader = {
-            self.showLoader(view: self.view, type: .native)
+            Loader.shared.show()
         }
 
         self.baseVM?.hideLoader = {
-            self.hideLoader()
+            Loader.shared.hide()
         }
         self.baseVM?.showNoInternetView = {
+            Loader.shared.hide()
             self.showNoInternetView()
         }
+        
+        self.baseVM?.updateViewWithData = updateViewWithData
 
     }
-
+    
+    func updateViewWithData() {
+        fatalError("this function must be overriden")
+    }
+    
     func reload() {
       //  fatalError("func must be implmented")
+        Loader.shared.show()
         removeNoInternetView()
     }
 
@@ -116,16 +124,6 @@ class BaseVC: UIViewController {
     
 }
 
-extension BaseVC: LoaderProtocol {
-
-    func showLoader(view: UIView, type: LoaderType, backgroundColor: UIColor? = .clear) {
-        Loader.show(onView: view, type: type, backGroundColor: backgroundColor)
-    }
-
-    func hideLoader() {
-        Loader.hide()
-    }
-}
 
 extension BaseVC {
 

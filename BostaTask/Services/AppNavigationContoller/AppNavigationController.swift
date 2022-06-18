@@ -14,8 +14,8 @@ class AppNavigationController: UINavigationController {
         super.viewDidLoad()
         self.navigationBar.barTintColor = UIColor.white
         self.navigationBar.shadowImage = UIImage()
-//        self.navigationBar.tintColor = Asset.Colors.tupeGray.color
-        
+        self.navigationBar.tintColor = Asset.darkGray.color
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .bold)], for: .normal)
     }
     
     func setRoot(window view: UIViewController) {

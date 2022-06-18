@@ -27,14 +27,19 @@ class ProfileVC: BaseVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.getUserProfileData()
+        self.navigationController?.navigationBar.isHiddenIfNeeded = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHiddenIfNeeded = false
+        self.navigationController?.navigationBar.topItem?.title = " "
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareView()
-        viewModel.updateProfileTableView = updateAlbumsDataSource
     }
    
-    
     func prepareView() {
         ProfileTableViewCell.register(with: albumsTableView)
         ProfileHeaderView.register(with: albumsTableView)
@@ -44,9 +49,9 @@ class ProfileVC: BaseVC {
     }
 
     
-    func makeAlbumsDataSource() -> UITableViewDiffableDataSource<ProfileSections, AlbumModel> {
+    func makeAlbumsDataSource() -> UITableViewDiffableDataSource<Sections, AlbumModel> {
         
-      let dataSource = UITableViewDiffableDataSource<ProfileSections, AlbumModel>(
+      let dataSource = UITableViewDiffableDataSource<Sections, AlbumModel>(
         tableView: albumsTableView,
         cellProvider: { (tableView, indexPath, album) ->
           UITableViewCell? in
@@ -60,20 +65,28 @@ class ProfileVC: BaseVC {
       return dataSource
     }
     
-    func updateAlbumsDataSource() {
-        var snapshot = NSDiffableDataSourceSnapshot<ProfileSections, AlbumModel>()
-        snapshot.appendSections(ProfileSections.allCases)
+    override func updateViewWithData() {
+        albumsTableView.reloadData()
+        var snapshot = NSDiffableDataSourceSnapshot<Sections, AlbumModel>()
+        snapshot.appendSections(Sections.allCases)
         snapshot.appendItems(viewModel.getUserAlbums() ?? [], toSection: .main)
         albumsDataSource.apply(snapshot, animatingDifferences: true)
     }
+    
 }
 
 extension ProfileVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return ProfileHeaderView.dequeue(from: tableView, with: viewModel.getUserProfile())
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let album = albumsDataSource.itemIdentifier(for: indexPath) {
+            self.navigationController?.pushViewController(VCsContainer.getAlbumDetailsScene(album: album), animated: true)
+        }
+
+    }
 }
 
-enum ProfileSections: CaseIterable {
+enum Sections: CaseIterable {
     case main
 }

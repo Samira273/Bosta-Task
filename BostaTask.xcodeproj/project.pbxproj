@@ -17,7 +17,14 @@
 		E5258D9F285CB34800B12CFF /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258D9E285CB34700B12CFF /* ProfileHeaderView.swift */; };
 		E5258DA1285CB35200B12CFF /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258DA0285CB35200B12CFF /* ProfileHeaderView.xib */; };
 		E5258DA3285D067B00B12CFF /* UIView+Extensoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DA2285D067B00B12CFF /* UIView+Extensoin.swift */; };
-		E5258DA7285D0B6700B12CFF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DA6285D0B6700B12CFF /* UIView+Extension.swift */; };
+		E5258DAD285D0EE000B12CFF /* AlbumDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DAC285D0EE000B12CFF /* AlbumDetailsVM.swift */; };
+		E5258DAF285D0EEA00B12CFF /* AlbumDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DAE285D0EEA00B12CFF /* AlbumDetailsModel.swift */; };
+		E5258DB2285D0F0400B12CFF /* AlbumDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DB0285D0F0400B12CFF /* AlbumDetailsVC.swift */; };
+		E5258DB3285D0F0400B12CFF /* AlbumDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258DB1285D0F0400B12CFF /* AlbumDetailsVC.xib */; };
+		E5258DB9285D2AED00B12CFF /* AlbumAPIs+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DB8285D2AED00B12CFF /* AlbumAPIs+Network.swift */; };
+		E5258DBF285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5258DBD285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift */; };
+		E5258DC0285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5258DBE285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib */; };
+		E5258DC3285D41CD00B12CFF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E5258DC2285D41CD00B12CFF /* Kingfisher */; };
 		E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D11285B3FEE000419EC /* AppDelegate.swift */; };
 		E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D13285B3FEE000419EC /* SceneDelegate.swift */; };
 		E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5339D1A285B3FEF000419EC /* Assets.xcassets */; };
@@ -25,6 +32,8 @@
 		E5339D29285B3FEF000419EC /* BostaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D28285B3FEF000419EC /* BostaTaskTests.swift */; };
 		E5339D33285B3FEF000419EC /* BostaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D32285B3FEF000419EC /* BostaTaskUITests.swift */; };
 		E5339D35285B3FEF000419EC /* BostaTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5339D34285B3FEF000419EC /* BostaTaskUITestsLaunchTests.swift */; };
+		E54F3E36285DAB770012DFFF /* ImageViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54F3E34285DAB770012DFFF /* ImageViewerVC.swift */; };
+		E54F3E37285DAB770012DFFF /* ImageViewerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E54F3E35285DAB770012DFFF /* ImageViewerVC.xib */; };
 		E5CDFA31285B413900D00B88 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA30285B413900D00B88 /* Assets.swift */; };
 		E5CDFA3A285B480700D00B88 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA39285B480700D00B88 /* AppManager.swift */; };
 		E5CDFA44285B497C00D00B88 /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA43285B497C00D00B88 /* NotificationName+Extension.swift */; };
@@ -43,7 +52,6 @@
 		E5CDFA84285BC41200D00B88 /* NoInternetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CDFA80285BC41200D00B88 /* NoInternetView.xib */; };
 		E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA82285BC41200D00B88 /* NoInternetView.swift */; };
 		E5CDFA8A285BC58700D00B88 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA88285BC58600D00B88 /* Loader.swift */; };
-		E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */; };
 		E5CDFA92285BC9EC00D00B88 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */; };
 		E5CDFA98285BCC6100D00B88 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E5CDFA97285BCC6100D00B88 /* Moya */; };
 		E5CDFA9B285BCD5F00D00B88 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CDFA9A285BCD5F00D00B88 /* ErrorHandler.swift */; };
@@ -82,7 +90,13 @@
 		E5258D9E285CB34700B12CFF /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		E5258DA0285CB35200B12CFF /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
 		E5258DA2285D067B00B12CFF /* UIView+Extensoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensoin.swift"; sourceTree = "<group>"; };
-		E5258DA6285D0B6700B12CFF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E5258DAC285D0EE000B12CFF /* AlbumDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsVM.swift; sourceTree = "<group>"; };
+		E5258DAE285D0EEA00B12CFF /* AlbumDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsModel.swift; sourceTree = "<group>"; };
+		E5258DB0285D0F0400B12CFF /* AlbumDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsVC.swift; sourceTree = "<group>"; };
+		E5258DB1285D0F0400B12CFF /* AlbumDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumDetailsVC.xib; sourceTree = "<group>"; };
+		E5258DB8285D2AED00B12CFF /* AlbumAPIs+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumAPIs+Network.swift"; sourceTree = "<group>"; };
+		E5258DBD285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5258DBE285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
 		E5339D0E285B3FEE000419EC /* BostaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BostaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5339D11285B3FEE000419EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5339D13285B3FEE000419EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +108,8 @@
 		E5339D2E285B3FEF000419EC /* BostaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5339D32285B3FEF000419EC /* BostaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaTaskUITests.swift; sourceTree = "<group>"; };
 		E5339D34285B3FEF000419EC /* BostaTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostaTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E54F3E34285DAB770012DFFF /* ImageViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerVC.swift; sourceTree = "<group>"; };
+		E54F3E35285DAB770012DFFF /* ImageViewerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewerVC.xib; sourceTree = "<group>"; };
 		E5CDFA30285B413900D00B88 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		E5CDFA39285B480700D00B88 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		E5CDFA43285B497C00D00B88 /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
@@ -109,7 +125,6 @@
 		E5CDFA81285BC41200D00B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NoInternetView.xib; sourceTree = "<group>"; };
 		E5CDFA82285BC41200D00B88 /* NoInternetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
 		E5CDFA88285BC58600D00B88 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
-		E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderProtocol.swift; sourceTree = "<group>"; };
 		E5CDFA91285BC9EC00D00B88 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E5CDFA9A285BCD5F00D00B88 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		E5CDFA9C285BCED300D00B88 /* NetworkDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDefaults.swift; sourceTree = "<group>"; };
@@ -128,6 +143,7 @@
 				E5CDFA7B285BC14600D00B88 /* SwiftMessages in Frameworks */,
 				E5CDFA98285BCC6100D00B88 /* Moya in Frameworks */,
 				E5CDFA78285BC0B900D00B88 /* Swinject in Frameworks */,
+				E5258DC3285D41CD00B12CFF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +198,66 @@
 			path = ProfileHeaderView;
 			sourceTree = "<group>";
 		};
+		E5258DA8285D0EAF00B12CFF /* Album Details */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DAA285D0ECA00B12CFF /* Model */,
+				E5258DAB285D0ED000B12CFF /* ViewModel */,
+				E5258DA9285D0EB800B12CFF /* View */,
+			);
+			path = "Album Details";
+			sourceTree = "<group>";
+		};
+		E5258DA9285D0EB800B12CFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DB0285D0F0400B12CFF /* AlbumDetailsVC.swift */,
+				E5258DB1285D0F0400B12CFF /* AlbumDetailsVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5258DAA285D0ECA00B12CFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DAE285D0EEA00B12CFF /* AlbumDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5258DAB285D0ED000B12CFF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DAC285D0EE000B12CFF /* AlbumDetailsVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E5258DBA285D323A00B12CFF /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5CDFA61285B64B100D00B88 /* BaseVM.swift */,
+			);
+			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
+		E5258DBB285D37E000B12CFF /* UICollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DBC285D37EE00B12CFF /* AlbumDetailsCollectionViewCell */,
+			);
+			path = UICollectionViewCells;
+			sourceTree = "<group>";
+		};
+		E5258DBC285D37EE00B12CFF /* AlbumDetailsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E5258DBD285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift */,
+				E5258DBE285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib */,
+			);
+			path = AlbumDetailsCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		E5339D05285B3FED000419EC = {
 			isa = PBXGroup;
 			children = (
@@ -206,14 +282,16 @@
 			isa = PBXGroup;
 			children = (
 				E5CDFA2B285B408E00D00B88 /* App Delegate */,
+				E54F3E33285DAB5B0012DFFF /* Custome Usages */,
 				E5CDFA5B285B63B400D00B88 /* Base */,
+				E5CDFA2F285B410000D00B88 /* Resources */,
 				E5CDFA32285B423000D00B88 /* Services */,
 				E5CDFA42285B496C00D00B88 /* Extensions */,
 				E5258D8E285C93DD00B12CFF /* TableViewCells */,
+				E5258DBB285D37E000B12CFF /* UICollectionViewCells */,
 				E5258D9C285CB31300B12CFF /* TableViewHeaders */,
 				E5CDFA34285B432700D00B88 /* Features */,
 				E5CDFA8F285BC8A500D00B88 /* Network */,
-				E5CDFA2F285B410000D00B88 /* Resources */,
 				E5CDFA2C285B40B600D00B88 /* UI */,
 				E5CDFA2D285B40E200D00B88 /* Supporting Files */,
 			);
@@ -235,6 +313,23 @@
 				E5339D34285B3FEF000419EC /* BostaTaskUITestsLaunchTests.swift */,
 			);
 			path = BostaTaskUITests;
+			sourceTree = "<group>";
+		};
+		E54F3E32285DAB4B0012DFFF /* ImageViewerVC */ = {
+			isa = PBXGroup;
+			children = (
+				E54F3E34285DAB770012DFFF /* ImageViewerVC.swift */,
+				E54F3E35285DAB770012DFFF /* ImageViewerVC.xib */,
+			);
+			path = ImageViewerVC;
+			sourceTree = "<group>";
+		};
+		E54F3E33285DAB5B0012DFFF /* Custome Usages */ = {
+			isa = PBXGroup;
+			children = (
+				E54F3E32285DAB4B0012DFFF /* ImageViewerVC */,
+			);
+			path = "Custome Usages";
 			sourceTree = "<group>";
 		};
 		E5CDFA2B285B408E00D00B88 /* App Delegate */ = {
@@ -294,6 +389,7 @@
 		E5CDFA34285B432700D00B88 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E5258DA8285D0EAF00B12CFF /* Album Details */,
 				E5CDFA35285B432E00D00B88 /* User Profile */,
 			);
 			path = Features;
@@ -340,7 +436,6 @@
 			children = (
 				E5CDFA43285B497C00D00B88 /* NotificationName+Extension.swift */,
 				E5258DA2285D067B00B12CFF /* UIView+Extensoin.swift */,
-				E5258DA6285D0B6700B12CFF /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -394,6 +489,7 @@
 				E5CDFA87285BC58600D00B88 /* Loader */,
 				E5CDFA7D285BC41200D00B88 /* No Internet view */,
 				E5CDFA5C285B63C100D00B88 /* BaseView */,
+				E5258DBA285D323A00B12CFF /* BaseViewModel */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -402,7 +498,6 @@
 			isa = PBXGroup;
 			children = (
 				E5CDFA5D285B63D600D00B88 /* BaseVC.swift */,
-				E5CDFA61285B64B100D00B88 /* BaseVM.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -420,7 +515,6 @@
 			isa = PBXGroup;
 			children = (
 				E5CDFA88285BC58600D00B88 /* Loader.swift */,
-				E5CDFA89285BC58600D00B88 /* LoaderProtocol.swift */,
 			);
 			path = Loader;
 			sourceTree = "<group>";
@@ -475,6 +569,7 @@
 			isa = PBXGroup;
 			children = (
 				E5CDFAA5285BD4CD00D00B88 /* AlbumsAPIs.swift */,
+				E5258DB8285D2AED00B12CFF /* AlbumAPIs+Network.swift */,
 			);
 			path = Albums;
 			sourceTree = "<group>";
@@ -501,6 +596,7 @@
 				E5CDFA77285BC0B900D00B88 /* Swinject */,
 				E5CDFA7A285BC14600D00B88 /* SwiftMessages */,
 				E5CDFA97285BCC6100D00B88 /* Moya */,
+				E5258DC2285D41CD00B12CFF /* Kingfisher */,
 			);
 			productName = BostaTask;
 			productReference = E5339D0E285B3FEE000419EC /* BostaTask.app */;
@@ -579,6 +675,7 @@
 				E5CDFA76285BC0B900D00B88 /* XCRemoteSwiftPackageReference "Swinject" */,
 				E5CDFA79285BC14600D00B88 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 				E5CDFA96285BCC6100D00B88 /* XCRemoteSwiftPackageReference "Moya" */,
+				E5258DC1285D41CD00B12CFF /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E5339D0F285B3FEE000419EC /* Products */;
 			projectDirPath = "";
@@ -596,11 +693,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54F3E37285DAB770012DFFF /* ImageViewerVC.xib in Resources */,
 				E5CDFA55285B572F00D00B88 /* SplashVC.xib in Resources */,
 				E5339D1E285B3FEF000419EC /* LaunchScreen.storyboard in Resources */,
 				E5339D1B285B3FEF000419EC /* Assets.xcassets in Resources */,
+				E5258DB3285D0F0400B12CFF /* AlbumDetailsVC.xib in Resources */,
 				E5CDFA84285BC41200D00B88 /* NoInternetView.xib in Resources */,
 				E5258D8D285C93C900B12CFF /* ProfileVC.xib in Resources */,
+				E5258DC0285D380A00B12CFF /* AlbumDetailsCollectionViewCell.xib in Resources */,
 				E5258DA1285CB35200B12CFF /* ProfileHeaderView.xib in Resources */,
 				E5258D94285C9F2200B12CFF /* ProfileTableViewCell.xib in Resources */,
 			);
@@ -650,6 +750,8 @@
 			files = (
 				E5CDFA50285B567E00D00B88 /* AppNavigationController.swift in Sources */,
 				E5258D9B285CA29400B12CFF /* AlbumModel.swift in Sources */,
+				E5258DB9285D2AED00B12CFF /* AlbumAPIs+Network.swift in Sources */,
+				E5258DBF285D380A00B12CFF /* AlbumDetailsCollectionViewCell.swift in Sources */,
 				E5CDFAA4285BD4C000D00B88 /* ProfileAPIs.swift in Sources */,
 				E5CDFA54285B572F00D00B88 /* SplashVC.swift in Sources */,
 				E5258D93285C9F2200B12CFF /* ProfileTableViewCell.swift in Sources */,
@@ -657,6 +759,8 @@
 				E5CDFA47285B4A0700D00B88 /* VCsContainer.swift in Sources */,
 				E5CDFA4A285B4A3A00D00B88 /* Assembler.swift in Sources */,
 				E5258DA3285D067B00B12CFF /* UIView+Extensoin.swift in Sources */,
+				E5258DAD285D0EE000B12CFF /* AlbumDetailsVM.swift in Sources */,
+				E54F3E36285DAB770012DFFF /* ImageViewerVC.swift in Sources */,
 				E5339D12285B3FEE000419EC /* AppDelegate.swift in Sources */,
 				E5CDFA85285BC41200D00B88 /* NoInternetView.swift in Sources */,
 				E5258D8C285C93C900B12CFF /* ProfileVC.swift in Sources */,
@@ -665,16 +769,16 @@
 				E5258D89285C93B500B12CFF /* ProfileVM.swift in Sources */,
 				E5258D85285C7EBE00B12CFF /* ProfileModel.swift in Sources */,
 				E5258D9F285CB34800B12CFF /* ProfileHeaderView.swift in Sources */,
-				E5CDFA8B285BC58700D00B88 /* LoaderProtocol.swift in Sources */,
+				E5258DB2285D0F0400B12CFF /* AlbumDetailsVC.swift in Sources */,
 				E5CDFA62285B64B100D00B88 /* BaseVM.swift in Sources */,
 				E5CDFA92285BC9EC00D00B88 /* NetworkManager.swift in Sources */,
+				E5258DAF285D0EEA00B12CFF /* AlbumDetailsModel.swift in Sources */,
 				E5CDFAA6285BD4CD00D00B88 /* AlbumsAPIs.swift in Sources */,
 				E5CDFA5E285B63D600D00B88 /* BaseVC.swift in Sources */,
 				E5CDFA4E285B4A5D00D00B88 /* ProfileAssembly.swift in Sources */,
 				E5339D14285B3FEE000419EC /* SceneDelegate.swift in Sources */,
 				E5CDFA31285B413900D00B88 /* Assets.swift in Sources */,
 				E5CDFA9D285BCED300D00B88 /* NetworkDefaults.swift in Sources */,
-				E5258DA7285D0B6700B12CFF /* UIView+Extension.swift in Sources */,
 				E5CDFAA1285BD0EF00D00B88 /* NetworkManager+Extension.swift in Sources */,
 				E5CDFA9B285BCD5F00D00B88 /* ErrorHandler.swift in Sources */,
 				E5CDFA3A285B480700D00B88 /* AppManager.swift in Sources */,
@@ -1016,6 +1120,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E5258DC1285D41CD00B12CFF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		E5CDFA73285BC09A00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
@@ -1051,6 +1163,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E5258DC2285D41CD00B12CFF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5258DC1285D41CD00B12CFF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		E5CDFA74285BC09A00D00B88 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E5CDFA73285BC09A00D00B88 /* XCRemoteSwiftPackageReference "Reachability" */;

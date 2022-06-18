@@ -14,8 +14,8 @@
             filePath = "BostaTask/Base/BaseView/BaseVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "reachabilityChanged()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "BostaTask/Base/BaseView/BaseVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "reachabilityChanged()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "BostaTask/Base/BaseView/BaseVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "showNoInternetView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "BostaTask/Base/BaseView/BaseVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "reload()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "BostaTask/Features/User Profile/View Model/ProfileVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "loadUserAlbums()"
             landmarkType = "7">
          </BreakpointContent>
@@ -87,16 +87,128 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "67BFBA3B-C65B-473B-815C-3C8358300EAE"
+            uuid = "F520071B-7D8E-4CF4-BF0C-D30E55F47820"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BostaTask/Features/User Profile/View/ProfileVC.swift"
+            filePath = "BostaTask/Features/Album Details/ViewModel/AlbumDetailsVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "updateAlbumsDataSource()"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "loadAlbumDetailsData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "720FA13E-4FDD-4A0B-B22A-9EF018182137"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTask/Features/Album Details/ViewModel/AlbumDetailsVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadAlbumDetailsData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "210C86A0-8E35-4D4C-8C4B-8B74FBEC94B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTask/UICollectionViewCells/AlbumDetailsCollectionViewCell/AlbumDetailsCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "configureCell(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A49AC04-2FE9-4B55-B1B9-D8CF6948EB75"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTask/Features/Album Details/ViewModel/AlbumDetailsVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "searchBarDidChange(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8A49AC04-2FE9-4B55-B1B9-D8CF6948EB75 - de33ed704b70bd43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTask.AlbumDetailsVMImpl.searchBarDidChange(with: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "BostaTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTask/Features/Album%20Details/ViewModel/AlbumDetailsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  uuid = "8A49AC04-2FE9-4B55-B1B9-D8CF6948EB75 - de33ed704b70bd43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BostaTask.AlbumDetailsVMImpl.searchBarDidChange(with: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "BostaTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samiramarassy/Desktop/BostaTask/BostaTask/Features/Album%20Details/ViewModel/AlbumDetailsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "135">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0F9462A-2381-43D4-A0B0-17C39C08B1CE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTask/Features/Album Details/View/AlbumDetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "searchBarSearchButtonClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "254C81BF-D725-48B6-9CEB-B2E13531C929"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BostaTask/Custome Usages/ImageViewerVC/ImageViewerVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "viewForZooming(in:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

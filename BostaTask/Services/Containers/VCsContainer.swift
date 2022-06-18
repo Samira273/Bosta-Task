@@ -31,5 +31,19 @@ class VCsContainer {
         navController.setRoot(window: viewController)
           return navController
     }
+    
+    class func getAlbumDetailsScene(album: AlbumModel?) -> UIViewController {
+        guard let vc = Assembler.sharedAssembler.resolver.resolve(AlbumDetailsVC.self, argument: album) else {
+            fatalError("no album details")
+        }
+        return vc
+    }
+    
+    class func getImageViewer(with image: UIImage?) -> UIViewController{
+        guard let vc = Assembler.sharedAssembler.resolver.resolve(ImageViewerVC.self, argument: image) else {
+            fatalError("No image viewer")
+        }
+        return vc
+    }
 
 }
