@@ -10,6 +10,8 @@ protocol AlbumDetailsVM: BaseVM {
     func loadAlbumDetailsData()
     func getAlbumDetails() -> [AlbumDetailsModel]?
     func getAlbum() -> AlbumModel?
+    func searchBarDidChange(with text: String?)
+    var updateSearchResult: (([AlbumDetailsModel]) -> Void)? {set get}
 }
 
 class AlbumDetailsVMImpl: AlbumDetailsVM {
@@ -22,6 +24,7 @@ class AlbumDetailsVMImpl: AlbumDetailsVM {
     var hideLoader: (() -> Void)?
     var showNoInternetView: (() -> Void)?
     var updateViewWithData: (() -> Void)?
+    var updateSearchResult: (([AlbumDetailsModel]) -> Void)?
     
     private var album: AlbumModel?
     var albumDetails: [AlbumDetailsModel]?
@@ -46,6 +49,12 @@ class AlbumDetailsVMImpl: AlbumDetailsVM {
                 self?.showErrorAlertClosure?(error.message)
             }
         }
+    }
+    
+    func searchBarDidChange(with text: String?) {
+        guard let list = albumDetails, let text = text else { return }
+        let filteredList = list.filter({$0.title?.range(of: text.lowercased()) != nil})
+        updateSearchResult?(filteredList)
     }
     
     func getAlbumDetails() -> [AlbumDetailsModel]? {

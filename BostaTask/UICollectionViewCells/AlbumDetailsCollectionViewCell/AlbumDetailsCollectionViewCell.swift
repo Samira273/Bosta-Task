@@ -11,17 +11,25 @@ import Kingfisher
 class AlbumDetailsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var detailsImageView: UIImageView!
+    let activityInd = UIActivityIndicatorView()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
     }
     
    
     func configureCell(with model: AlbumDetailsModel?) {
         let url =  URL(string: model?.url ?? "")
         if let url = url {
-            detailsImageView.kf.setImage(with: url)
+            activityInd.center = CGPoint(x: self.frame.size.width  / 2,
+                                         y: self.frame.size.height / 2)
+            activityInd.color = UIColor.red
+            detailsImageView.addSubview(activityInd)
+            activityInd.startAnimating()
+            detailsImageView.kf.setImage(with: url, placeholder: nil, options: nil) {[weak self] _ in
+                self?.activityInd.stopAnimating()
+            }
         } else {
             detailsImageView.image = UIImage(named: "ic_image_placeholder")
         }

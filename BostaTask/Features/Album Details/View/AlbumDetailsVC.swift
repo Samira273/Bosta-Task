@@ -48,6 +48,16 @@ class AlbumDetailsVC: BaseVC {
         AlbumDetailsCollectionViewCell.register(with: detailsCollectionView)
         detailsCollectionView.collectionViewLayout = createLayout()
         detailsCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        searchBar.delegate = self
+        viewModel.updateSearchResult = updateView(with:)
+    }
+    
+    func updateView(with models: [AlbumDetailsModel]?) {
+        var currentSnapshot = albumDetailsCollectionViewDataSource.snapshot()
+        currentSnapshot.deleteAllItems()
+        currentSnapshot.appendSections([.main])
+        currentSnapshot.appendItems(models ?? [], toSection: .main)
+        albumDetailsCollectionViewDataSource.apply(currentSnapshot, animatingDifferences: false)
     }
     
     func configureNavBar() {
@@ -82,11 +92,24 @@ class AlbumDetailsVC: BaseVC {
     }
     
     private func makeDataSource() -> UICollectionViewDiffableDataSource<Sections, AlbumDetailsModel> {
-        
         return UICollectionViewDiffableDataSource<Sections, AlbumDetailsModel>(
             collectionView: detailsCollectionView) {(collectionView, indexPath, albumDetails) -> UICollectionViewCell? in
                 return AlbumDetailsCollectionViewCell.dequeue(from: collectionView, for: indexPath, albumDetails: albumDetails)
         }
+    }
+    
+}
+
+extension AlbumDetailsVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.searchBarDidChange(with: searchText)
+    }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("searchBarSearchButtonClicked")
+        if searchBar.text?.isEmpty ?? true {
+            updateView(with: viewModel.getAlbumDetails())
+        }
+        searchBar.resignFirstResponder()
     }
     
 }
