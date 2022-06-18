@@ -33,9 +33,9 @@ class AlbumDetailsVC: BaseVC {
         } else {
             viewModel.loadAlbumDetailsData()
         }
-        DispatchQueue.main.async {
-            self.configureNavBar()
-        }
+//        DispatchQueue.main.async {
+//            self.configureNavBar()
+//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -72,9 +72,27 @@ class AlbumDetailsVC: BaseVC {
     }
     
     func configureNavBar() {
-        let backBarBtnItem = UIBarButtonItem()
-        backBarBtnItem.title = viewModel.getAlbum()?.title
-        navigationController?.navigationBar.backItem?.backBarButtonItem = backBarBtnItem
+        
+        let button =  UIButton(type: .custom)
+        button.addTarget(self, action: #selector(back), for: .touchUpInside)
+        button.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 20, height: 31)
+        let imageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
+        imageView.image = Asset.icBack.image
+        button.addSubview(imageView)
+        let label = UILabel(frame: CGRect(x: 25, y: 0, width: button.frame.width - 30, height: 20))
+        label.font = .systemFont(ofSize: 20, weight: .bold)
+        label.text = viewModel.getAlbum()?.title
+        label.textAlignment = .center
+        label.textColor = Asset.darkGray.color
+        label.backgroundColor =  .clear
+        label.lineBreakMode = .byTruncatingTail
+        button.addSubview(label)
+        let barButton = UIBarButtonItem(customView: button)
+        self.navigationItem.leftBarButtonItem = barButton
+    }
+    
+    @objc func back() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     override func updateViewWithData() {
